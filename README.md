@@ -1,7 +1,7 @@
 Air Native Extension to access a device unique id (iOS + Android)
 ======================================
 
-This is an [Air native extension](http://www.adobe.com/devnet/air/native-extensions-for-air.html) that gives you access to a device unique id. It has been developed by [FreshPlanet](http://freshplanet.com).
+This is an [Air native extension](http://www.adobe.com/devnet/air/native-extensions-for-air.html) that gives you access to a device unique id and an advertiser unique id. It has been developed by [FreshPlanet](http://freshplanet.com).
 
 
 Build script
@@ -17,6 +17,7 @@ Reference
 ------
 
 - iOS 6 http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIDevice_Class/Reference/UIDevice.html#//apple_ref/occ/instp/UIDevice/identifierForVendor
+http://developer.apple.com/library/ios/#documentation/AdSupport/Reference/ASIdentifierManager_Ref/ASIdentifierManager.html#//apple_ref/occ/instp/ASIdentifierManager/advertisingIdentifier
 - iOS 5 http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIDevice_Class/DeprecationAppendix/AppendixADeprecatedAPI.html
 - Android http://developer.android.com/reference/android/provider/Settings.Secure.html#ANDROID_ID
 

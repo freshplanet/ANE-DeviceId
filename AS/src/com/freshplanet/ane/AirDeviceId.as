@@ -29,6 +29,7 @@ package com.freshplanet.ane
 		
 		private var extCtx:ExtensionContext = null;
 		private var _deviceId:String;
+		private var _advertisingId:String;
 				
 		public function AirDeviceId()
 		{
@@ -58,7 +59,19 @@ package com.freshplanet.ane
 		
 		public function get isOnDevice():Boolean
 		{
-			var value:Boolean = Capabilities.manufacturer.indexOf('iOS') > -1 || Capabilities.manufacturer.indexOf('Android') > -1;
+			var value:Boolean = this.isOnIOS || this.isOnAndroid;
+			return value;
+		}
+		
+		public function get isOnIOS():Boolean
+		{
+			var value:Boolean = Capabilities.manufacturer.indexOf('iOS') > -1;
+			return value;
+		}
+		
+		public function get isOnAndroid():Boolean
+		{
+			var value:Boolean = Capabilities.manufacturer.indexOf('Android') > -1;
 			return value;
 		}
 		
@@ -71,6 +84,9 @@ package com.freshplanet.ane
 			return extCtx.call('isSupported');
 		}
 		
+		/**
+		 * Returns a unique id on ios and android, "emulator" otherwise.
+		 */
 		public function getDeviceId() : String
 		{
 			if(!this.isOnDevice)
@@ -80,6 +96,22 @@ package com.freshplanet.ane
 			return this._deviceId;
 		}
 		
+		/**
+		 * Returns the advertising id on ios > 6.0, the same as getDeviceId otherwise.
+		 */
+		public function getAdvertisingId() : String
+		{
+			if(!this.isOnDevice)
+				return "emulator";
+			if(!this._advertisingId)
+			{
+				if(this.isOnIOS)
+					this._advertisingId = this.extCtx.call('getAdvertisingId') as String;
+				else
+					this._advertisingId = getDeviceId();
+			}
+			return this._advertisingId;
+		}
 		
 		/**
 		 * Status events allow the native part of the ANE to communicate with the ActionScript part.

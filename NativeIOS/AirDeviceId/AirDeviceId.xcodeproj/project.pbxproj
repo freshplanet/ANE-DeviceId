@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11FC086A16FA36E9005846C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC086916FA36E9005846C3 /* Foundation.framework */; };
+		11FC086C16FA36E9005846C3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC086B16FA36E9005846C3 /* CoreFoundation.framework */; };
+		11FC086E16FA36E9005846C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC086D16FA36E9005846C3 /* UIKit.framework */; };
+		11FC087016FA36E9005846C3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC086F16FA36E9005846C3 /* MobileCoreServices.framework */; };
+		11FC087216FA36E9005846C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC087116FA36E9005846C3 /* CoreGraphics.framework */; };
+		11FC087416FA36E9005846C3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC087316FA36E9005846C3 /* SystemConfiguration.framework */; };
+		11FC087616FA36E9005846C3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC087516FA36E9005846C3 /* AudioToolbox.framework */; };
+		11FC087816FA36E9005846C3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC087716FA36E9005846C3 /* CFNetwork.framework */; };
+		11FC087A16FA36E9005846C3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC087916FA36E9005846C3 /* QuartzCore.framework */; };
+		11FC087C16FA36E9005846C3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC087B16FA36E9005846C3 /* OpenGLES.framework */; };
+		11FC087E16FA36E9005846C3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC087D16FA36E9005846C3 /* CoreLocation.framework */; };
+		11FC088016FA36E9005846C3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC087F16FA36E9005846C3 /* CoreMedia.framework */; };
+		11FC088216FA36E9005846C3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC088116FA36E9005846C3 /* CoreVideo.framework */; };
+		11FC088416FA36E9005846C3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC088316FA36E9005846C3 /* AVFoundation.framework */; };
+		11FC088616FA36E9005846C3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC088516FA36E9005846C3 /* Security.framework */; };
+		11FC088C16FA36E9005846C3 /* AirDeviceId.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FC088B16FA36E9005846C3 /* AirDeviceId.m */; };
+		11FC089416FA370D005846C3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC089316FA370D005846C3 /* AdSupport.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11FC086616FA36E9005846C3 /* libAirDeviceId.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAirDeviceId.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		11FC086916FA36E9005846C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		11FC086B16FA36E9005846C3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		11FC086D16FA36E9005846C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		11FC086F16FA36E9005846C3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		11FC087116FA36E9005846C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		11FC087316FA36E9005846C3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		11FC087516FA36E9005846C3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		11FC087716FA36E9005846C3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		11FC087916FA36E9005846C3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		11FC087B16FA36E9005846C3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		11FC087D16FA36E9005846C3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		11FC087F16FA36E9005846C3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		11FC088116FA36E9005846C3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		11FC088316FA36E9005846C3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		11FC088516FA36E9005846C3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		11FC088916FA36E9005846C3 /* AirDeviceId-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirDeviceId-Prefix.pch"; sourceTree = "<group>"; };
+		11FC088A16FA36E9005846C3 /* AirDeviceId.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirDeviceId.h; sourceTree = "<group>"; };
+		11FC088B16FA36E9005846C3 /* AirDeviceId.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirDeviceId.m; sourceTree = "<group>"; };
+		11FC088D16FA36E9005846C3 /* platformoptions.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = platformoptions.xml; sourceTree = "<group>"; };
+		11FC089316FA370D005846C3 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11FC086316FA36E9005846C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FC089416FA370D005846C3 /* AdSupport.framework in Frameworks */,
+				11FC086E16FA36E9005846C3 /* UIKit.framework in Frameworks */,
+				11FC086A16FA36E9005846C3 /* Foundation.framework in Frameworks */,
+				11FC086C16FA36E9005846C3 /* CoreFoundation.framework in Frameworks */,
+				11FC087016FA36E9005846C3 /* MobileCoreServices.framework in Frameworks */,
+				11FC087216FA36E9005846C3 /* CoreGraphics.framework in Frameworks */,
+				11FC087416FA36E9005846C3 /* SystemConfiguration.framework in Frameworks */,
+				11FC087616FA36E9005846C3 /* AudioToolbox.framework in Frameworks */,
+				11FC087816FA36E9005846C3 /* CFNetwork.framework in Frameworks */,
+				11FC087A16FA36E9005846C3 /* QuartzCore.framework in Frameworks */,
+				11FC087C16FA36E9005846C3 /* OpenGLES.framework in Frameworks */,
+				11FC087E16FA36E9005846C3 /* CoreLocation.framework in Frameworks */,
+				11FC088016FA36E9005846C3 /* CoreMedia.framework in Frameworks */,
+				11FC088216FA36E9005846C3 /* CoreVideo.framework in Frameworks */,
+				11FC088416FA36E9005846C3 /* AVFoundation.framework in Frameworks */,
+				11FC088616FA36E9005846C3 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11FC085D16FA36E9005846C3 = {
+			isa = PBXGroup;
+			children = (
+				11FC089316FA370D005846C3 /* AdSupport.framework */,
+				11FC088716FA36E9005846C3 /* AirDeviceId */,
+				11FC086816FA36E9005846C3 /* Frameworks */,
+				11FC086716FA36E9005846C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11FC086716FA36E9005846C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11FC086616FA36E9005846C3 /* libAirDeviceId.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11FC086816FA36E9005846C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11FC086916FA36E9005846C3 /* Foundation.framework */,
+				11FC086B16FA36E9005846C3 /* CoreFoundation.framework */,
+				11FC086D16FA36E9005846C3 /* UIKit.framework */,
+				11FC086F16FA36E9005846C3 /* MobileCoreServices.framework */,
+				11FC087116FA36E9005846C3 /* CoreGraphics.framework */,
+				11FC087316FA36E9005846C3 /* SystemConfiguration.framework */,
+				11FC087516FA36E9005846C3 /* AudioToolbox.framework */,
+				11FC087716FA36E9005846C3 /* CFNetwork.framework */,
+				11FC087916FA36E9005846C3 /* QuartzCore.framework */,
+				11FC087B16FA36E9005846C3 /* OpenGLES.framework */,
+				11FC087D16FA36E9005846C3 /* CoreLocation.framework */,
+				11FC087F16FA36E9005846C3 /* CoreMedia.framework */,
+				11FC088116FA36E9005846C3 /* CoreVideo.framework */,
+				11FC088316FA36E9005846C3 /* AVFoundation.framework */,
+				11FC088516FA36E9005846C3 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11FC088716FA36E9005846C3 /* AirDeviceId */ = {
+			isa = PBXGroup;
+			children = (
+				11FC088A16FA36E9005846C3 /* AirDeviceId.h */,
+				11FC088B16FA36E9005846C3 /* AirDeviceId.m */,
+				11FC088816FA36E9005846C3 /* Supporting Files */,
+			);
+			path = AirDeviceId;
+			sourceTree = "<group>";
+		};
+		11FC088816FA36E9005846C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11FC088916FA36E9005846C3 /* AirDeviceId-Prefix.pch */,
+				11FC088D16FA36E9005846C3 /* platformoptions.xml */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		11FC086416FA36E9005846C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		11FC086516FA36E9005846C3 /* AirDeviceId */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11FC089016FA36E9005846C3 /* Build configuration list for PBXNativeTarget "AirDeviceId" */;
+			buildPhases = (
+				11FC086216FA36E9005846C3 /* Sources */,
+				11FC086316FA36E9005846C3 /* Frameworks */,
+				11FC086416FA36E9005846C3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirDeviceId;
+			productName = AirDeviceId;
+			productReference = 11FC086616FA36E9005846C3 /* libAirDeviceId.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11FC085E16FA36E9005846C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 11FC086116FA36E9005846C3 /* Build configuration list for PBXProject "AirDeviceId" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 11FC085D16FA36E9005846C3;
+			productRefGroup = 11FC086716FA36E9005846C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11FC086516FA36E9005846C3 /* AirDeviceId */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11FC086216FA36E9005846C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FC088C16FA36E9005846C3 /* AirDeviceId.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		11FC088E16FA36E9005846C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include/";
+			};
+			name = Debug;
+		};
+		11FC088F16FA36E9005846C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include/";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11FC089116FA36E9005846C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AirDeviceId.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirDeviceId/AirDeviceId-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		11FC089216FA36E9005846C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AirDeviceId.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirDeviceId/AirDeviceId-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11FC086116FA36E9005846C3 /* Build configuration list for PBXProject "AirDeviceId" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11FC088E16FA36E9005846C3 /* Debug */,
+				11FC088F16FA36E9005846C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11FC089016FA36E9005846C3 /* Build configuration list for PBXNativeTarget "AirDeviceId" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11FC089116FA36E9005846C3 /* Debug */,
+				11FC089216FA36E9005846C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11FC085E16FA36E9005846C3 /* Project object */;
+}
