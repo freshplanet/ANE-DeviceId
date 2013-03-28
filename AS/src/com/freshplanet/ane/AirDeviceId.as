@@ -86,29 +86,31 @@ package com.freshplanet.ane
 		
 		/**
 		 * Returns a unique id on ios and android, "emulator" otherwise.
+		 * @param salt a developer specific salt
 		 */
-		public function getDeviceId() : String
+		public function getDeviceId(salt:String) : String
 		{
 			if(!this.isOnDevice)
 				return "emulator";
 			if(!this._deviceId)
-				this._deviceId = this.extCtx.call('getDeviceId') as String;
+				this._deviceId = this.extCtx.call('getDeviceId', salt) as String;
 			return this._deviceId;
 		}
 		
 		/**
 		 * Returns the advertising id on ios > 6.0, the same as getDeviceId otherwise.
+		 * @param salt a developer specific salt
 		 */
-		public function getAdvertisingId() : String
+		public function getAdvertisingId(salt:String) : String
 		{
 			if(!this.isOnDevice)
 				return "emulator";
 			if(!this._advertisingId)
 			{
 				if(this.isOnIOS)
-					this._advertisingId = this.extCtx.call('getAdvertisingId') as String;
+					this._advertisingId = this.extCtx.call('getAdvertisingId', salt) as String;
 				else
-					this._advertisingId = getDeviceId();
+					this._advertisingId = getDeviceId(salt);
 			}
 			return this._advertisingId;
 		}

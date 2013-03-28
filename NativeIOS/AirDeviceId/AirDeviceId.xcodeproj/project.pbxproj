@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110C5A481704A37100CCF4C9 /* MacAddressUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 110C5A461704A37100CCF4C9 /* MacAddressUID.h */; };
+		110C5A491704A37100CCF4C9 /* MacAddressUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 110C5A471704A37100CCF4C9 /* MacAddressUID.m */; };
 		11FC086A16FA36E9005846C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC086916FA36E9005846C3 /* Foundation.framework */; };
 		11FC086C16FA36E9005846C3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC086B16FA36E9005846C3 /* CoreFoundation.framework */; };
 		11FC086E16FA36E9005846C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC086D16FA36E9005846C3 /* UIKit.framework */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		110C5A461704A37100CCF4C9 /* MacAddressUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacAddressUID.h; sourceTree = "<group>"; };
+		110C5A471704A37100CCF4C9 /* MacAddressUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacAddressUID.m; sourceTree = "<group>"; };
 		11FC086616FA36E9005846C3 /* libAirDeviceId.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAirDeviceId.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FC086916FA36E9005846C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11FC086B16FA36E9005846C3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -123,6 +127,8 @@
 				11FC088A16FA36E9005846C3 /* AirDeviceId.h */,
 				11FC088B16FA36E9005846C3 /* AirDeviceId.m */,
 				11FC088816FA36E9005846C3 /* Supporting Files */,
+				110C5A461704A37100CCF4C9 /* MacAddressUID.h */,
+				110C5A471704A37100CCF4C9 /* MacAddressUID.m */,
 			);
 			path = AirDeviceId;
 			sourceTree = "<group>";
@@ -143,6 +149,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110C5A481704A37100CCF4C9 /* MacAddressUID.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11FC088C16FA36E9005846C3 /* AirDeviceId.m in Sources */,
+				110C5A491704A37100CCF4C9 /* MacAddressUID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +302,7 @@
 				11FC089216FA36E9005846C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
