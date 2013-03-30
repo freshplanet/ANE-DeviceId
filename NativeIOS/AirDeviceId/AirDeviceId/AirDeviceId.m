@@ -187,8 +187,8 @@ void AirDeviceIdExtInitializer(void** extDataToSet, FREContextInitializer* ctxIn
     NSLog(@"Entering AirDeviceIdExtInitializer()");
 
     *extDataToSet = NULL;
-    *ctxInitializerToSet = &ContextInitializer;
-    *ctxFinalizerToSet = &ContextFinalizer;
+    *ctxInitializerToSet = &AirDeviceIdContextInitializer;
+    *ctxFinalizerToSet = &AirDeviceIdContextFinalizer;
 
     NSLog(@"Exiting AirDeviceIdExtInitializer()");
 }
@@ -210,7 +210,7 @@ void AirDeviceIdExtFinalizer(void* extData)
 /* ContextInitializer()
  * The context initializer is called when the runtime creates the extension context instance.
  */
-void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToTest, const FRENamedFunction** functionsToSet)
+void AirDeviceIdContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToTest, const FRENamedFunction** functionsToSet)
 {
     NSLog(@"Entering ContextInitializer()");
 
@@ -244,7 +244,7 @@ void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, u
  * calls the ExtensionContext instance's dispose() method.
  * If the AIR runtime garbage collector disposes of the ExtensionContext instance, the runtime also calls ContextFinalizer().
  */
-void ContextFinalizer(FREContext ctx) 
+void AirDeviceIdContextFinalizer(FREContext ctx) 
 {
     NSLog(@"Entering ContextFinalizer()");
 
