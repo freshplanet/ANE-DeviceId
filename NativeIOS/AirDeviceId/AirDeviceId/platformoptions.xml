@@ -19,6 +19,8 @@
 <platform xmlns="http://ns.adobe.com/air/extension/3.1"> 
     <description >AirDeviceId</description> 
     <copyright>2012 FreshPlanet</copyright> 
-    <linkerOptions></linkerOptions>
+    <linkerOptions>
+      <option>-framework AdSupport</option>
+    </linkerOptions>
 </platform>
 
