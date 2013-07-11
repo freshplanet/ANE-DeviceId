@@ -281,7 +281,7 @@ void AirDeviceIdContextInitializer(void* extData, const uint8_t* ctxType, FRECon
     /* The following code describes the functions that are exposed by this native extension to the ActionScript code.
      * As a sample, the function isSupported is being provided.
      */
-    *numFunctionsToTest = 3;
+    *numFunctionsToTest = 4;
 
     FRENamedFunction* func = (FRENamedFunction*) malloc(sizeof(FRENamedFunction) * (*numFunctionsToTest));
     func[0].name = (const uint8_t*) "isSupported";

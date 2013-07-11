@@ -28,9 +28,10 @@ package com.freshplanet.ane
 		private static var _instance:AirDeviceId;
 		
 		private var extCtx:ExtensionContext = null;
-		private var _deviceId:String;
-		private var _advertisingId:String;
-				
+		private var _id 	: String = null;
+		private var _idfv	: String = null;
+		private var _idfa	: String = null;
+		
 		public function AirDeviceId()
 		{
 			if (!_instance)
@@ -91,28 +92,46 @@ package com.freshplanet.ane
 		public function getID( salt:String ) : String {
 			
 			if ( !this.isOnDevice ) {
-				return "emulator";
+				return "simulator";
 			}
 			
-			if ( !this._deviceId ) {
-				this._deviceId = this.extCtx.call( 'getID', salt ) as String;
+			if ( !this._id ) {
+				this._id = this.extCtx.call( 'getID', salt ) as String;
 			}
 			
-			return this._deviceId;
+			return this._id;
 		}
 		
 		/**
 		 * @return vendor id or null on unavailable/Android
 		 */
 		public function getIDFV() : String {
-			return extCtx.call( 'getIDFV' ) as String;
+			
+			if ( !this.isOnDevice ) {
+				return null;
+			}
+			
+			if ( !this._idfv ) {
+				this._idfv = extCtx.call( 'getIDFV' ) as String;
+			}
+			
+			return this._idfv;
 		}
 		
 		/**
 		 * @return advertiser id or null on unavailable/Android
 		 */
 		public function getIDFA() : String {
-			return extCtx.call( 'getIDFA' ) as String;
+			
+			if ( !this.isOnDevice ) {
+				return null;
+			}
+			
+			if ( !this._idfa ) {
+				this._idfa = extCtx.call( 'getIDFA' ) as String;
+			}
+			
+			return this._idfa;
 		}
 		
 		/**
