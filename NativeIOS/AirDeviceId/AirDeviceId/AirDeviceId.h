@@ -33,8 +33,12 @@
  * to be able to call the native functions in the ANE from their ActionScript code
 */
 DEFINE_ANE_FUNCTION(IsSupported);
-DEFINE_ANE_FUNCTION(getDeviceId);
-DEFINE_ANE_FUNCTION(getAdvertisingId);
+//DEFINE_ANE_FUNCTION(getDeviceId);
+//DEFINE_ANE_FUNCTION(getAdvertisingId);
+
+DEFINE_ANE_FUNCTION(getID);
+DEFINE_ANE_FUNCTION(getIDFV);
+DEFINE_ANE_FUNCTION(getIDFA);
 
 
 // ANE setup

@@ -83,94 +83,158 @@ DEFINE_ANE_FUNCTION(IsSupported)
     return fo;
 }
 
-DEFINE_ANE_FUNCTION(getDeviceId)
-{
-    NSLog(@"Entering getDeviceId()");
-    FREObject fo;
+//DEFINE_ANE_FUNCTION(getDeviceId)
+//{
+//    NSLog(@"Entering getDeviceId()");
+//    FREObject fo;
+//    
+//    // get the id
+//    NSString * idString;
+//    
+//    if([[UIDevice currentDevice] respondsToSelector:@selector(identifierForVendor)])
+//    {
+//        NSLog(@"identifierForVendor supported");
+//        idString = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+//    }
+//    // Forbidden by Apple starting 2013-05-01
+//    //else if([[UIDevice currentDevice] respondsToSelector:@selector(uniqueIdentifier)])
+//    //{
+//    //    NSLog(@"identifierForVendor not supported, using uniqueIdentifier");
+//    //    idString = [[UIDevice currentDevice] uniqueIdentifier];
+//    //}
+//    else
+//    {
+//        // get the salt
+//        uint32_t stringArgLength;
+//        const uint8_t *stringArg;
+//        
+//        NSString *salt;
+//        if (FREGetObjectAsUTF8(argv[0], &stringArgLength, &stringArg) != FRE_OK)
+//        {
+//            salt = @"";
+//        }
+//        else
+//        {
+//            salt = [NSString stringWithUTF8String:(char*)stringArg];
+//        }
+//        
+//        // get the mac address id
+//        idString = [MacAddressUID uniqueIdentifierForSalt:salt];
+//    }
+//    
+//    // set the id in the response
+//    NSLog(@"id returned: %@", idString);
+//    FRENewObjectFromUTF8(strlen([idString UTF8String]), (const uint8_t *)[idString UTF8String], &fo);
+//    NSLog(@"Exiting getDeviceId()");
+//    return fo;
+//}
+//
+//DEFINE_ANE_FUNCTION(getAdvertisingId)
+//{
+//    NSLog(@"Entering getAdvertisingId()");
+//    FREObject fo;
+//    
+//    // get the id
+//    NSString * idString;
+//    
+//    if([[ASIdentifierManager sharedManager] respondsToSelector:@selector(advertisingIdentifier)])
+//    {
+//        NSLog(@"advertisingIdentifier supported");
+//        idString = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+//    }
+//    // Forbidden by Apple starting 2013-05-01
+//    //else if([[UIDevice currentDevice] respondsToSelector:@selector(uniqueIdentifier)])
+//    //{
+//    //    NSLog(@"advertisingIdentifier not supported, using uniqueIdentifier");
+//    //    idString = [[UIDevice currentDevice] uniqueIdentifier];
+//    //}
+//    else
+//    {
+//        // get the salt
+//        uint32_t stringArgLength;
+//        const uint8_t *stringArg;
+//        
+//        NSString *salt;
+//        if (FREGetObjectAsUTF8(argv[0], &stringArgLength, &stringArg) != FRE_OK)
+//        {
+//            salt = @"";
+//        }
+//        else
+//        {
+//            salt = [NSString stringWithUTF8String:(char*)stringArg];
+//        }
+//        
+//        // get the mac address id
+//        idString = [MacAddressUID uniqueIdentifierForSalt:salt];
+//    }
+//    
+//    NSLog(@"id returned: %@", idString);
+//    FRENewObjectFromUTF8(strlen([idString UTF8String]), (const uint8_t *)[idString UTF8String], &fo);
+//    NSLog(@"Exiting getAdvertisingId()");
+//    return fo;
+//}
+
+DEFINE_ANE_FUNCTION(getID) {
     
-    // get the id
-    NSString * idString;
+    NSLog(@"Entering getID()");
+    FREObject fo = NULL;
     
-    if([[UIDevice currentDevice] respondsToSelector:@selector(identifierForVendor)])
-    {
-        NSLog(@"identifierForVendor supported");
-        idString = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    uint32_t stringArgLength;
+    const uint8_t *stringArg;
+    
+    NSString *salt;
+    if (FREGetObjectAsUTF8(argv[0], &stringArgLength, &stringArg) != FRE_OK) {
+        salt = @"";
     }
-    // Forbidden by Apple starting 2013-05-01
-    //else if([[UIDevice currentDevice] respondsToSelector:@selector(uniqueIdentifier)])
-    //{
-    //    NSLog(@"identifierForVendor not supported, using uniqueIdentifier");
-    //    idString = [[UIDevice currentDevice] uniqueIdentifier];
-    //}
-    else
-    {
-        // get the salt
-        uint32_t stringArgLength;
-        const uint8_t *stringArg;
-        
-        NSString *salt;
-        if (FREGetObjectAsUTF8(argv[0], &stringArgLength, &stringArg) != FRE_OK)
-        {
-            salt = @"";
-        }
-        else
-        {
-            salt = [NSString stringWithUTF8String:(char*)stringArg];
-        }
-        
-        // get the mac address id
-        idString = [MacAddressUID uniqueIdentifierForSalt:salt];
+    else {
+        salt = [NSString stringWithUTF8String:(char*)stringArg];
     }
     
-    // set the id in the response
+    // get the mac address id
+    NSString* idString = [MacAddressUID uniqueIdentifierForSalt:salt];
+
     NSLog(@"id returned: %@", idString);
     FRENewObjectFromUTF8(strlen([idString UTF8String]), (const uint8_t *)[idString UTF8String], &fo);
-    NSLog(@"Exiting getDeviceId()");
+    
+    NSLog(@"Exiting getID()");
     return fo;
 }
 
-DEFINE_ANE_FUNCTION(getAdvertisingId)
-{
-    NSLog(@"Entering getAdvertisingId()");
-    FREObject fo;
+DEFINE_ANE_FUNCTION(getIDFV) {
+    
+    NSLog(@"Entering getIDFV()");
+    FREObject fo = NULL;
     
     // get the id
-    NSString * idString;
+    if ([[UIDevice currentDevice] respondsToSelector:@selector(identifierForVendor)]) {
+       
+        NSLog(@"identifierForVendor supported");
+        NSString* idString = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+        
+        NSLog(@"id returned: %@", idString);
+        FRENewObjectFromUTF8(strlen([idString UTF8String]), (const uint8_t *)[idString UTF8String], &fo);
+    }
     
-    if([[ASIdentifierManager sharedManager] respondsToSelector:@selector(advertisingIdentifier)])
-    {
+    NSLog(@"Exiting getIDFV()");
+    return fo;
+}
+
+DEFINE_ANE_FUNCTION(getIDFA) {
+    
+    NSLog(@"Entering getIDFA()");
+    FREObject fo = NULL;
+    
+    // get the id
+    if ([[ASIdentifierManager sharedManager] respondsToSelector:@selector(advertisingIdentifier)]) {
+        
         NSLog(@"advertisingIdentifier supported");
-        idString = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-    }
-    // Forbidden by Apple starting 2013-05-01
-    //else if([[UIDevice currentDevice] respondsToSelector:@selector(uniqueIdentifier)])
-    //{
-    //    NSLog(@"advertisingIdentifier not supported, using uniqueIdentifier");
-    //    idString = [[UIDevice currentDevice] uniqueIdentifier];
-    //}
-    else
-    {
-        // get the salt
-        uint32_t stringArgLength;
-        const uint8_t *stringArg;
-        
-        NSString *salt;
-        if (FREGetObjectAsUTF8(argv[0], &stringArgLength, &stringArg) != FRE_OK)
-        {
-            salt = @"";
-        }
-        else
-        {
-            salt = [NSString stringWithUTF8String:(char*)stringArg];
-        }
-        
-        // get the mac address id
-        idString = [MacAddressUID uniqueIdentifierForSalt:salt];
+        NSString* idString = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+    
+        NSLog(@"id returned: %@", idString);
+        FRENewObjectFromUTF8(strlen([idString UTF8String]), (const uint8_t *)[idString UTF8String], &fo);
     }
     
-    NSLog(@"id returned: %@", idString);
-    FRENewObjectFromUTF8(strlen([idString UTF8String]), (const uint8_t *)[idString UTF8String], &fo);
-    NSLog(@"Exiting getAdvertisingId()");
+    NSLog(@"Exiting getIDFA()");
     return fo;
 }
 
@@ -224,13 +288,25 @@ void AirDeviceIdContextInitializer(void* extData, const uint8_t* ctxType, FRECon
     func[0].functionData = NULL;
     func[0].function = &IsSupported;
     
-    func[1].name = (const uint8_t*) "getDeviceId";
-    func[1].functionData = NULL;
-    func[1].function = &getDeviceId;
+//    func[1].name = (const uint8_t*) "getDeviceId";
+//    func[1].functionData = NULL;
+//    func[1].function = &getDeviceId;
+//    
+//    func[2].name = (const uint8_t*) "getAdvertisingId";
+//    func[2].functionData = NULL;
+//    func[2].function = &getAdvertisingId;
     
-    func[2].name = (const uint8_t*) "getAdvertisingId";
+    func[1].name = (const uint8_t*) "getID";
+    func[1].functionData = NULL;
+    func[1].function = &getID;
+    
+    func[2].name = (const uint8_t*) "getIDFV";
     func[2].functionData = NULL;
-    func[2].function = &getAdvertisingId;
+    func[2].function = &getIDFV;
+    
+    func[3].name = (const uint8_t*) "getIDFA";
+    func[3].functionData = NULL;
+    func[3].function = &getIDFA;
 
     *functionsToSet = func;
 

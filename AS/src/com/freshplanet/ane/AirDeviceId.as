@@ -79,40 +79,71 @@ package com.freshplanet.ane
 		 * Example function.
 		 * Define your own API and use extCtx.call() to communicate with the native part of the ANE.
 		 */
-		public function isSupported() : Boolean
-		{
-			return extCtx.call('isSupported');
+		public function isSupported() : Boolean {
+			return extCtx.call( 'isSupported' );
 		}
 		
 		/**
 		 * Returns a unique id on ios and android, "emulator" otherwise.
 		 * @param salt a developer specific salt
 		 */
-		public function getDeviceId(salt:String) : String
-		{
-			if(!this.isOnDevice)
-				return "emulator";
-			if(!this._deviceId)
-				this._deviceId = this.extCtx.call('getDeviceId', salt) as String;
-			return this._deviceId;
-		}
+//		public function getDeviceId(salt:String) : String
+//		{
+//			if(!this.isOnDevice)
+//				return "emulator";
+//			if(!this._deviceId)
+//				this._deviceId = this.extCtx.call('getDeviceId', salt) as String;
+//			return this._deviceId;
+//		}
 		
 		/**
 		 * Returns the advertising id on ios > 6.0, the same as getDeviceId otherwise.
 		 * @param salt a developer specific salt
 		 */
-		public function getAdvertisingId(salt:String) : String
-		{
-			if(!this.isOnDevice)
+//		public function getAdvertisingId(salt:String) : String
+//		{
+//			if(!this.isOnDevice)
+//				return "emulator";
+//			if(!this._advertisingId)
+//			{
+//				if(this.isOnIOS)
+//					this._advertisingId = this.extCtx.call('getAdvertisingId', salt) as String;
+//				else
+//					this._advertisingId = getDeviceId(salt);
+//			}
+//			return this._advertisingId;
+//		}
+		
+		/**
+		 * 
+		 * @param salt	a developer specific salt
+		 * @return		unique id for this device
+		 */
+		public function getID( salt:String ) : String {
+			
+			if ( !this.isOnDevice ) {
 				return "emulator";
-			if(!this._advertisingId)
-			{
-				if(this.isOnIOS)
-					this._advertisingId = this.extCtx.call('getAdvertisingId', salt) as String;
-				else
-					this._advertisingId = getDeviceId(salt);
 			}
-			return this._advertisingId;
+			
+			if ( !this._deviceId ) {
+				this._deviceId = this.extCtx.call( 'getID', salt ) as String;
+			}
+			
+			return this._deviceId;
+		}
+		
+		/**
+		 * @return vendor id or null on unavailable/Android
+		 */
+		public function getIDFV() : String {
+			return extCtx.call( 'getIDFV' );
+		}
+		
+		/**
+		 * @return advertiser id or null on unavailable/Android
+		 */
+		public function getIDFA() : String {
+			return extCtx.call( 'getIDFA' );
 		}
 		
 		/**

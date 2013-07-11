@@ -2,181 +2,181 @@ TAirDeviceId
 v5
 r1
 cCheck dependencies
-cProcessPCH /var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-fabfrunpqihzdrhghemlawfrufsa/AirDeviceId-Prefix.pch.gch AirDeviceId/AirDeviceId-Prefix.pch normal armv7 objective-c com.apple.compilers.llvmgcc42
-cProcessPCH /var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-evbkwrmutocbzoftiymyaoxdepte/AirDeviceId-Prefix.pch.gch AirDeviceId/AirDeviceId-Prefix.pch normal armv7s objective-c com.apple.compilers.llvmgcc42
-cCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/MacAddressUID.o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m normal armv7 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m normal armv7 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m normal armv7s objective-c com.apple.compilers.llvmgcc42
-cCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/MacAddressUID.o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m normal armv7s objective-c com.apple.compilers.llvmgcc42
-cLibtool /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a normal armv7
-cLibtool /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a normal armv7s
-cCreateUniversalBinary /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/libAirDeviceId.a normal "armv7 armv7s"
+cProcessPCH /var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-bvgbfzcrkmphzgaqqufddwzccwar/AirDeviceId-Prefix.pch.gch AirDeviceId/AirDeviceId-Prefix.pch normal armv7s objective-c com.apple.compilers.llvmgcc42
+cProcessPCH /var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-dhwkosmvgmjxpjbtwcxtccokeude/AirDeviceId-Prefix.pch.gch AirDeviceId/AirDeviceId-Prefix.pch normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/MacAddressUID.o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m normal armv7s objective-c com.apple.compilers.llvmgcc42
+cCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/MacAddressUID.o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m normal armv7s objective-c com.apple.compilers.llvmgcc42
+cLibtool /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a normal armv7
+cLibtool /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a normal armv7s
+cCreateUniversalBinary /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/libAirDeviceId.a normal "armv7 armv7s"
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
-c000000005143C0330000000000000110
-t1363394611
+c00000000517557A00000000000000110
+t1366644640
 s272
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
-c0000000051380638000000000036CDF0
-t1362626104
+c00000000516C0A82000000000036CDF0
+t1366035074
 s3591664
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AdSupport.framework/AdSupport
-c00000000513806360000000000008BE0
-t1362626102
+c00000000516C0A810000000000008BE0
+t1366035073
 s35808
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.h
-c000000005138063600000000000000E0
-t1362626102
+c00000000516C0A8100000000000000E0
+t1366035073
 s224
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c000000005138063800000000006B1F40
-t1362626104
+c00000000516C0A8200000000006B1F40
+t1366035074
 s7020352
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
-c000000005138063800000000002C8530
-t1362626104
+c00000000516C0A8200000000002C8530
+t1366035074
 s2917680
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-c0000000051380638000000000049C700
-t1362626104
+c00000000516C0A82000000000049C700
+t1366035074
 s4835072
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c00000000513806390000000000322700
-t1362626105
+c00000000516C0A820000000000322700
+t1366035074
 s3286784
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-c00000000513806380000000000114910
-t1362626104
+c00000000516C0A820000000000114910
+t1366035074
 s1132816
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
-c000000005138063800000000001694D0
-t1362626104
+c00000000516C0A8200000000001694D0
+t1366035074
 s1479888
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
-c00000000513806380000000000041310
-t1362626104
+c00000000516C0A820000000000041310
+t1366035074
 s267024
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c0000000051380639000000000062AD10
-t1362626105
+c00000000516C0A83000000000062AD10
+t1366035075
 s6466832
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000005138063900000000000015F7
-t1362626105
+c00000000516C0A8200000000000015F7
+t1366035074
 s5623
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-c000000005138063A000000000012C360
-t1362626106
+c00000000516C0A83000000000012C360
+t1366035075
 s1229664
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
-c000000005138063A0000000000024190
-t1362626106
+c00000000516C0A830000000000024190
+t1366035075
 s147856
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c000000005138063A00000000003596B0
-t1362626106
+c00000000516C0A8300000000003596B0
+t1366035075
 s3511984
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Security.framework/Security
-c000000005138063A00000000000A8A40
-t1362626106
+c00000000516C0A8300000000000A8A40
+t1366035075
 s690752
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
-c000000005138063A00000000000CAFB0
-t1362626106
+c00000000516C0A8300000000000CAFB0
+t1366035075
 s831408
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000005138063A0000000000000E8D
-t1362626106
+c00000000516C0A830000000000000E8D
+t1366035075
 s3725
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000005138063C00000000011BCDF0
-t1362626108
+c00000000516C0A8500000000011BCDF0
+t1366035077
 s18599408
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/CommonCrypto/CommonHMAC.h
-c000000005138063E000000000000108C
-t1362626110
+c00000000516C0A87000000000000108C
+t1366035079
 s4236
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/net/if.h
-c000000005138063E0000000000003EAD
-t1362626110
+c00000000516C0A880000000000003EAD
+t1366035080
 s16045
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/net/if_dl.h
-c000000005138063E00000000000013E1
-t1362626110
+c00000000516C0A8800000000000013E1
+t1366035080
 s5089
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/stdint.h
-c000000005138063E00000000000018EF
-t1362626110
+c00000000516C0A8800000000000018EF
+t1366035080
 s6383
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/sys/socket.h
-c000000005138063E0000000000005B3C
-t1362626110
+c00000000516C0A880000000000005B3C
+t1366035080
 s23356
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/sys/sysctl.h
-c000000005138063E0000000000007DBD
-t1362626110
+c00000000516C0A880000000000007DBD
+t1366035080
 s32189
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId-Prefix.pch
-c000000005149FF69000000000000011F
-t1363804009
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId-Prefix.pch
+c0000000051DEC42A000000000000011F
+t1373553706
 s287
 i<Foundation/Foundation.h>
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.h
-c000000005149FFE30000000000000A52
-t1363804131
-s2642
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.h
+c0000000051DEE0970000000000000AC5
+t1373560983
+s2757
 i"FlashRuntimeExtensions.h"
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m
-c00000000515479720000000000001DA0
-t1364490610
-s7584
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m
+c0000000051DEE19E0000000000002723
+t1373561246
+s10019
 i"AirDeviceId.h"
 i<UIKit/UIKit.h>
 i<AdSupport/AdSupport.h>
 i"MacAddressUID.h"
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/FlashRuntimeExtensions.h
-c0000000050D380E20000000000004D54
-t1356038370
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/FlashRuntimeExtensions.h
+c0000000051DEC42A0000000000004D54
+t1373553706
 s19796
 i<stdint.h>
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.h
-c000000005154779100000000000003A3
-t1364490129
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.h
+c0000000051DEC42A00000000000003A3
+t1373553706
 s931
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m
-c0000000051547DC80000000000001083
-t1364491720
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m
+c0000000051DEC42A0000000000001083
+t1373553706
 s4227
 i"MacAddressUID.h"
 i<sys/socket.h>
@@ -185,175 +185,175 @@ i<net/if.h>
 i<net/if_dl.h>
 i<CommonCrypto/CommonHMAC.h>
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.LinkFileList
-c0000000051547DD50000000000000146
-t1364491733
-s326
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.LinkFileList
+c0000000051DEEF56000000000000013E
+t1373564758
+s318
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.o
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.o
 t2
 s0
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/MacAddressUID.o
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/MacAddressUID.o
 t2
 s0
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a
 t2
 s0
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.LinkFileList
-c0000000051547DD50000000000000148
-t1364491733
-s328
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.LinkFileList
+c0000000051DEEF560000000000000140
+t1373564758
+s320
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.o
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.o
 t2
 s0
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/MacAddressUID.o
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/MacAddressUID.o
 t2
 s0
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a
 t2
 s0
 
-N/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/libAirDeviceId.a
+N/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/libAirDeviceId.a
 t2
 s0
 
-N/var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-evbkwrmutocbzoftiymyaoxdepte/AirDeviceId-Prefix.pch.gch
+N/var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-bvgbfzcrkmphzgaqqufddwzccwar/AirDeviceId-Prefix.pch.gch
 t2
 s0
 
-N/var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-fabfrunpqihzdrhghemlawfrufsa/AirDeviceId-Prefix.pch.gch
+N/var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-dhwkosmvgmjxpjbtwcxtccokeude/AirDeviceId-Prefix.pch.gch
 t2
 s0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies1a882d55b504b741^3cbd7655b504b741^---0#1#0#--18"Check dependencies36"957A1D4E-02AB-4E82-A710-F9D86F84455A-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies2b16a7d6268fb741^c4cfbbd6268fb741^---0#1#0#--18"Check dependencies36"CAEEC266-E269-4959-9527-BCB8B8470262-
 
-CCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m normal armv7 objective-c com.apple.compilers.llvmgcc42
-s386184534.926945
-e386184535.998705
+CCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s395257559.052602
+e395257559.192334
 r1
 xCompileC
 xbuild/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.o
-x/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m
+x/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m
 xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.me465ed56b504b741^deaaff57b504b741^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m0000000000000000^3378"CompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.o AirDeviceId/AirDeviceId.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:.:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fno-objc-exceptions -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -gdwarf-2 -mthumb -miphoneos-version-min=6.1 -iquote /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-generated-files.hmap -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-own-target-headers.hmap -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-all-target-headers.hmap -iquote /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-project-headers.hmap -iquote/Applications/Adobe -iquoteFlash -iquoteBuilder -iquote4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources/armv7 -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources -F/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -include /var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-fabfrunpqihzdrhghemlawfrufsa/AirDeviceId-Prefix.pch -c /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m -o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.o36"8D14C400-6438-4871-A8AE-144C9E2B7FF9-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m15910dd7268fb741^583c31d7268fb741^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m0000000000000000^3148"CompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.o AirDeviceId/AirDeviceId.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fno-objc-exceptions -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -gdwarf-2 -mthumb -miphoneos-version-min=6.1 -iquote /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-generated-files.hmap -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-own-target-headers.hmap -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-all-target-headers.hmap -iquote /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-project-headers.hmap -iquote/Applications/Adobe -iquoteFlash -iquoteBuilder -iquote4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources/armv7 -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources -F/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -include /var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-dhwkosmvgmjxpjbtwcxtccokeude/AirDeviceId-Prefix.pch -c /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m -o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.o36"4BDE7D7A-9922-4B99-833B-E9232EB9186F-
 
-CCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/MacAddressUID.o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m normal armv7 objective-c com.apple.compilers.llvmgcc42
-s386184534.926941
-e386184535.243034
+CCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/MacAddressUID.o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s395257559.052605
+e395257559.123649
 r1
 xCompileC
 xbuild/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/MacAddressUID.o
-x/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m
+x/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m
 xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-o/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m: In function '+[MacAddressUID uniqueIdentifierForSalt:]':
-o/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+getMacAddress'
-o/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: (Messages without a matching method signature
-o/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: will be assumed to return 'id' and accept
-o/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: '...' as arguments.)
-o/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+hashString:withSalt:'
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.mc365ed56b504b741^15373e57b504b741^-919"/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m: In function '+[MacAddressUID uniqueIdentifierForSalt:]':/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+getMacAddress'/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: (Messages without a matching method signature/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: will be assumed to return 'id' and accept/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: '...' as arguments.)/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+hashString:withSalt:'3(21%IDEActivityLogMessage2@51"'MacAddressUID' may not respond to '+getMacAddress'-386184535#154#161#-1#-23%DVTTextDocumentLocation3@111"file://localhost/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^29#18446744073709551615#29#18446744073709551615#18446744073709551615#0#26"'*' may not respond to '*'--2@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)-386184535#315#155#-0#-3@111"file://localhost/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^29#18446744073709551615#29#18446744073709551615#18446744073709551615#0#19"LLVM GCC 4.2 Notice--2@58"'MacAddressUID' may not respond to '+hashString:withSalt:'-386184535#751#168#-1#-3@111"file://localhost/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^29#18446744073709551615#29#18446744073709551615#18446744073709551615#0#26"'*' may not respond to '*'--0#0#0#-19%DVTDocumentLocation4@111"file://localhost/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^3386"CompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/MacAddressUID.o AirDeviceId/MacAddressUID.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:.:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fno-objc-exceptions -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -gdwarf-2 -mthumb -miphoneos-version-min=6.1 -iquote /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-generated-files.hmap -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-own-target-headers.hmap -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-all-target-headers.hmap -iquote /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-project-headers.hmap -iquote/Applications/Adobe -iquoteFlash -iquoteBuilder -iquote4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources/armv7 -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources -F/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -include /var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-fabfrunpqihzdrhghemlawfrufsa/AirDeviceId-Prefix.pch -c /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m -o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/MacAddressUID.o36"A37F1A67-F49B-4ED9-AB50-4DFE9D3F7639-
+o/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m: In function '+[MacAddressUID uniqueIdentifierForSalt:]':
+o/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+getMacAddress'
+o/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: (Messages without a matching method signature
+o/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: will be assumed to return 'id' and accept
+o/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: '...' as arguments.)
+o/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+hashString:withSalt:'
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m1d8f0dd7268fb741^bda61fd7268fb741^-895"/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m: In function '+[MacAddressUID uniqueIdentifierForSalt:]':/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+getMacAddress'/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: (Messages without a matching method signature/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: will be assumed to return 'id' and accept/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: '...' as arguments.)/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+hashString:withSalt:'3(21%IDEActivityLogMessage2@51"'MacAddressUID' may not respond to '+getMacAddress'-395257559#150#157#-1#-23%DVTTextDocumentLocation3@107"file://localhost/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^29#18446744073709551615#29#18446744073709551615#18446744073709551615#0#26"'*' may not respond to '*'--2@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)-395257559#307#151#-0#-3@107"file://localhost/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^29#18446744073709551615#29#18446744073709551615#18446744073709551615#0#19"LLVM GCC 4.2 Notice--2@58"'MacAddressUID' may not respond to '+hashString:withSalt:'-395257559#731#164#-1#-3@107"file://localhost/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^29#18446744073709551615#29#18446744073709551615#18446744073709551615#0#26"'*' may not respond to '*'--0#0#0#-19%DVTDocumentLocation4@107"file://localhost/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^3156"CompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/MacAddressUID.o AirDeviceId/MacAddressUID.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fno-objc-exceptions -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -gdwarf-2 -mthumb -miphoneos-version-min=6.1 -iquote /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-generated-files.hmap -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-own-target-headers.hmap -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-all-target-headers.hmap -iquote /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-project-headers.hmap -iquote/Applications/Adobe -iquoteFlash -iquoteBuilder -iquote4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources/armv7 -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources -F/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -include /var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-dhwkosmvgmjxpjbtwcxtccokeude/AirDeviceId-Prefix.pch -c /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m -o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/MacAddressUID.o36"E383A336-A1B2-4F1A-A4E2-7F8D4B55DBC0-
 
-CCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m normal armv7s objective-c com.apple.compilers.llvmgcc42
-s386184535.244371
-e386184535.998716
+CCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m normal armv7s objective-c com.apple.compilers.llvmgcc42
+s395257559.052610
+e395257559.205270
 r1
 xCompileC
 xbuild/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.o
-x/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m
+x/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m
 xnormal
 xarmv7s
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.mb5a93e57b504b741^03b2ff57b504b741^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m0000000000000000^3383"CompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.o AirDeviceId/AirDeviceId.m normal armv7s objective-c com.apple.compilers.llvmgcc42    cd /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:.:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7s -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fno-objc-exceptions -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -gdwarf-2 -mthumb -miphoneos-version-min=6.1 -iquote /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-generated-files.hmap -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-own-target-headers.hmap -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-all-target-headers.hmap -iquote /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-project-headers.hmap -iquote/Applications/Adobe -iquoteFlash -iquoteBuilder -iquote4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources/armv7s -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources -F/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -include /var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-evbkwrmutocbzoftiymyaoxdepte/AirDeviceId-Prefix.pch -c /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m -o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.o36"61D7D641-3D5F-4989-B50B-2EA79BBC7332-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m08900dd7268fb741^478e34d7268fb741^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m0000000000000000^3153"CompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.o AirDeviceId/AirDeviceId.m normal armv7s objective-c com.apple.compilers.llvmgcc42    cd /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7s -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fno-objc-exceptions -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -gdwarf-2 -mthumb -miphoneos-version-min=6.1 -iquote /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-generated-files.hmap -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-own-target-headers.hmap -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-all-target-headers.hmap -iquote /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-project-headers.hmap -iquote/Applications/Adobe -iquoteFlash -iquoteBuilder -iquote4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources/armv7s -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources -F/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -include /var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-bvgbfzcrkmphzgaqqufddwzccwar/AirDeviceId-Prefix.pch -c /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId.m -o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.o36"9A3214BA-FFE5-44BD-A3DF-621F5F753C6C-
 
-CCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/MacAddressUID.o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m normal armv7s objective-c com.apple.compilers.llvmgcc42
-s386184536.000115
-e386184536.070600
+CCompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/MacAddressUID.o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m normal armv7s objective-c com.apple.compilers.llvmgcc42
+s395257559.052613
+e395257559.136129
 r1
 xCompileC
 xbuild/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/MacAddressUID.o
-x/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m
+x/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m
 xnormal
 xarmv7s
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-o/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m: In function '+[MacAddressUID uniqueIdentifierForSalt:]':
-o/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+getMacAddress'
-o/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: (Messages without a matching method signature
-o/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: will be assumed to return 'id' and accept
-o/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: '...' as arguments.)
-o/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+hashString:withSalt:'
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m60200058b504b741^f9121258b504b741^-919"/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m: In function '+[MacAddressUID uniqueIdentifierForSalt:]':/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+getMacAddress'/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: (Messages without a matching method signature/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: will be assumed to return 'id' and accept/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: '...' as arguments.)/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+hashString:withSalt:'3(21%IDEActivityLogMessage2@51"'MacAddressUID' may not respond to '+getMacAddress'-386184536#154#161#-1#-23%DVTTextDocumentLocation3@111"file://localhost/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^29#18446744073709551615#29#18446744073709551615#18446744073709551615#0#26"'*' may not respond to '*'--2@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)-386184536#315#155#-0#-3@111"file://localhost/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^29#18446744073709551615#29#18446744073709551615#18446744073709551615#0#19"LLVM GCC 4.2 Notice--2@58"'MacAddressUID' may not respond to '+hashString:withSalt:'-386184536#751#168#-1#-3@111"file://localhost/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^29#18446744073709551615#29#18446744073709551615#18446744073709551615#0#26"'*' may not respond to '*'--0#0#0#-19%DVTDocumentLocation4@111"file://localhost/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^3391"CompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/MacAddressUID.o AirDeviceId/MacAddressUID.m normal armv7s objective-c com.apple.compilers.llvmgcc42    cd /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:.:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7s -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fno-objc-exceptions -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -gdwarf-2 -mthumb -miphoneos-version-min=6.1 -iquote /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-generated-files.hmap -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-own-target-headers.hmap -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-all-target-headers.hmap -iquote /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-project-headers.hmap -iquote/Applications/Adobe -iquoteFlash -iquoteBuilder -iquote4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources/armv7s -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources -F/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -include /var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-evbkwrmutocbzoftiymyaoxdepte/AirDeviceId-Prefix.pch -c /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m -o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/MacAddressUID.o36"1BDFF632-3A89-479E-8519-640790379E24-
+o/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m: In function '+[MacAddressUID uniqueIdentifierForSalt:]':
+o/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+getMacAddress'
+o/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: (Messages without a matching method signature
+o/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: will be assumed to return 'id' and accept
+o/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: '...' as arguments.)
+o/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+hashString:withSalt:'
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.mfc8e0dd7268fb741^c3d822d7268fb741^-895"/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m: In function '+[MacAddressUID uniqueIdentifierForSalt:]':/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+getMacAddress'/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: (Messages without a matching method signature/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: will be assumed to return 'id' and accept/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: '...' as arguments.)/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m:30: warning: 'MacAddressUID' may not respond to '+hashString:withSalt:'3(21%IDEActivityLogMessage2@51"'MacAddressUID' may not respond to '+getMacAddress'-395257559#150#157#-1#-23%DVTTextDocumentLocation3@107"file://localhost/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^29#18446744073709551615#29#18446744073709551615#18446744073709551615#0#26"'*' may not respond to '*'--2@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)-395257559#307#151#-0#-3@107"file://localhost/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^29#18446744073709551615#29#18446744073709551615#18446744073709551615#0#19"LLVM GCC 4.2 Notice--2@58"'MacAddressUID' may not respond to '+hashString:withSalt:'-395257559#731#164#-1#-3@107"file://localhost/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^29#18446744073709551615#29#18446744073709551615#18446744073709551615#0#26"'*' may not respond to '*'--0#0#0#-19%DVTDocumentLocation4@107"file://localhost/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m0000000000000000^3161"CompileC build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/MacAddressUID.o AirDeviceId/MacAddressUID.m normal armv7s objective-c com.apple.compilers.llvmgcc42    cd /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7s -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fno-objc-exceptions -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -gdwarf-2 -mthumb -miphoneos-version-min=6.1 -iquote /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-generated-files.hmap -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-own-target-headers.hmap -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-all-target-headers.hmap -iquote /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-project-headers.hmap -iquote/Applications/Adobe -iquoteFlash -iquoteBuilder -iquote4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources/armv7s -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources -F/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -include /var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-bvgbfzcrkmphzgaqqufddwzccwar/AirDeviceId-Prefix.pch -c /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/MacAddressUID.m -o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/MacAddressUID.o36"0A77C80C-B8FB-4CDF-AC15-0018C41BBBDF-
 
-CCreateUniversalBinary /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/libAirDeviceId.a normal "armv7 armv7s"
-s386184536.188765
-e386184536.268631
+CCreateUniversalBinary /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/libAirDeviceId.a normal "armv7 armv7s"
+s395257559.225284
+e395257559.233565
 r1
 xCreateUniversalBinary
-x/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/libAirDeviceId.a
+x/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/libAirDeviceId.a
 xnormal
 xarmv7 armv7s
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Create universal binary /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/libAirDeviceId.ae8843058b504b741^7ac44458b504b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/libAirDeviceId.a000000000080d041^1269"CreateUniversalBinary build/Release-iphoneos/libAirDeviceId.a normal "armv7 armv7s"    cd /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:.:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    libtool -static /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a -o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/libAirDeviceId.a36"020F5BA7-7216-49A7-8D76-56A83504A685-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Create universal binary /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/libAirDeviceId.a59bf39d7268fb741^71cb3bd7268fb741^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/libAirDeviceId.a000000000080d041^1067"CreateUniversalBinary build/Release-iphoneos/libAirDeviceId.a normal "armv7 armv7s"    cd /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    libtool -static /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a -o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/libAirDeviceId.a36"93CA69CF-BA6B-4582-BB77-F9FCCFB0C843-
 
-CLibtool /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a normal armv7
-s386184536.071961
-e386184536.146520
+CLibtool /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a normal armv7
+s395257559.199111
+e395257559.206223
 r1
 xLibtool
-x/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a
+x/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a
 xnormal
 xarmv7
 o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Libtool build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a normal armv7a5821258b504b741^09882558b504b741^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1939"Libtool build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a normal armv7    cd /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:.:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -filelist /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.LinkFileList -ObjC -framework AdSupport -framework UIKit -framework Foundation -framework CoreFoundation -framework MobileCoreServices -framework CoreGraphics -framework SystemConfiguration -framework AudioToolbox -framework CFNetwork -framework QuartzCore -framework OpenGLES -framework CoreLocation -framework CoreMedia -framework CoreVideo -framework AVFoundation -framework Security -o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a36"FFE484D6-0851-4062-BFA5-5EDB2C7A11EA-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Libtool build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a normal armv7991033d7268fb741^68cc34d7268fb741^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1737"Libtool build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a normal armv7    cd /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -filelist /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/AirDeviceId.LinkFileList -ObjC -framework AdSupport -framework UIKit -framework Foundation -framework CoreFoundation -framework MobileCoreServices -framework CoreGraphics -framework SystemConfiguration -framework AudioToolbox -framework CFNetwork -framework QuartzCore -framework OpenGLES -framework CoreLocation -framework CoreMedia -framework CoreVideo -framework AVFoundation -framework Security -o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7/libAirDeviceId.a36"CA2111F0-7F57-4CFE-B1CD-0C8EA0DE6F9A-
 
-CLibtool /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a normal armv7s
-s386184536.147735
-e386184536.182186
+CLibtool /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a normal armv7s
+s395257559.211707
+e395257559.218397
 r1
 xLibtool
-x/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a
+x/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a
 xnormal
 xarmv7s
 o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Libtool build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a normal armv7s10e72558b504b741^6ea62e58b504b741^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1944"Libtool build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a normal armv7s    cd /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:.:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7s -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -filelist /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.LinkFileList -ObjC -framework AdSupport -framework UIKit -framework Foundation -framework CoreFoundation -framework MobileCoreServices -framework CoreGraphics -framework SystemConfiguration -framework AudioToolbox -framework CFNetwork -framework QuartzCore -framework OpenGLES -framework CoreLocation -framework CoreMedia -framework CoreVideo -framework AVFoundation -framework Security -o /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a36"2F4BFFA3-B89E-4804-81D5-B2B9ED07DF3A-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Libtool build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a normal armv7s174636d7268fb741^f7ea37d7268fb741^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1742"Libtool build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a normal armv7s    cd /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7s -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -filelist /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/AirDeviceId.LinkFileList -ObjC -framework AdSupport -framework UIKit -framework Foundation -framework CoreFoundation -framework MobileCoreServices -framework CoreGraphics -framework SystemConfiguration -framework AudioToolbox -framework CFNetwork -framework QuartzCore -framework OpenGLES -framework CoreLocation -framework CoreMedia -framework CoreVideo -framework AVFoundation -framework Security -o /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/Objects-normal/armv7s/libAirDeviceId.a36"C3815E40-A1ED-4FD9-8F3B-690533A3856C-
 
-CProcessPCH /var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-evbkwrmutocbzoftiymyaoxdepte/AirDeviceId-Prefix.pch.gch AirDeviceId/AirDeviceId-Prefix.pch normal armv7s objective-c com.apple.compilers.llvmgcc42
-s386184533.471092
-e386184534.919827
+CProcessPCH /var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-bvgbfzcrkmphzgaqqufddwzccwar/AirDeviceId-Prefix.pch.gch AirDeviceId/AirDeviceId-Prefix.pch normal armv7s objective-c com.apple.compilers.llvmgcc42
+s395257558.740737
+e395257559.045490
 r1
 xProcessPCH
-x/var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-evbkwrmutocbzoftiymyaoxdepte/AirDeviceId-Prefix.pch.gch
+x/var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-bvgbfzcrkmphzgaqqufddwzccwar/AirDeviceId-Prefix.pch.gch
 xAirDeviceId/AirDeviceId-Prefix.pch
 xnormal
 xarmv7s
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile AirDeviceId/AirDeviceId-Prefix.pchc6be7855b504b741^467ceb56b504b741^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId-Prefix.pch0000000000000000^3316"ProcessPCH /var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-evbkwrmutocbzoftiymyaoxdepte/AirDeviceId-Prefix.pch.gch AirDeviceId/AirDeviceId-Prefix.pch normal armv7s objective-c com.apple.compilers.llvmgcc42    cd /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:.:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c-header -arch armv7s -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fno-objc-exceptions -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -gdwarf-2 -mthumb -miphoneos-version-min=6.1 -iquote /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-generated-files.hmap -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-own-target-headers.hmap -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-all-target-headers.hmap -iquote /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-project-headers.hmap -iquote/Applications/Adobe -iquoteFlash -iquoteBuilder -iquote4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources/armv7s -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources -F/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -c /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId-Prefix.pch -o /var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-evbkwrmutocbzoftiymyaoxdepte/AirDeviceId-Prefix.pch.gch36"E8AB99AE-812E-4D1D-B5B0-2749AA9011C3-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile AirDeviceId/AirDeviceId-Prefix.pcha8c4bdd6268fb741^68ae0bd7268fb741^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId-Prefix.pch0000000000000000^3090"ProcessPCH /var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-bvgbfzcrkmphzgaqqufddwzccwar/AirDeviceId-Prefix.pch.gch AirDeviceId/AirDeviceId-Prefix.pch normal armv7s objective-c com.apple.compilers.llvmgcc42    cd /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c-header -arch armv7s -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fno-objc-exceptions -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -gdwarf-2 -mthumb -miphoneos-version-min=6.1 -iquote /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-generated-files.hmap -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-own-target-headers.hmap -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-all-target-headers.hmap -iquote /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-project-headers.hmap -iquote/Applications/Adobe -iquoteFlash -iquoteBuilder -iquote4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources/armv7s -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources -F/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -c /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId-Prefix.pch -o /var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-bvgbfzcrkmphzgaqqufddwzccwar/AirDeviceId-Prefix.pch.gch36"11A75EFD-4EAF-4F61-BC83-A5243536CA9B-
 
-CProcessPCH /var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-fabfrunpqihzdrhghemlawfrufsa/AirDeviceId-Prefix.pch.gch AirDeviceId/AirDeviceId-Prefix.pch normal armv7 objective-c com.apple.compilers.llvmgcc42
-s386184533.471090
-e386184534.919730
+CProcessPCH /var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-dhwkosmvgmjxpjbtwcxtccokeude/AirDeviceId-Prefix.pch.gch AirDeviceId/AirDeviceId-Prefix.pch normal armv7 objective-c com.apple.compilers.llvmgcc42
+s395257558.740739
+e395257559.045482
 r1
 xProcessPCH
-x/var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-fabfrunpqihzdrhghemlawfrufsa/AirDeviceId-Prefix.pch.gch
+x/var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-dhwkosmvgmjxpjbtwcxtccokeude/AirDeviceId-Prefix.pch.gch
 xAirDeviceId/AirDeviceId-Prefix.pch
 xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile AirDeviceId/AirDeviceId-Prefix.pchb6be7855b504b741^5375eb56b504b741^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId-Prefix.pch0000000000000000^3313"ProcessPCH /var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-fabfrunpqihzdrhghemlawfrufsa/AirDeviceId-Prefix.pch.gch AirDeviceId/AirDeviceId-Prefix.pch normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:.:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fno-objc-exceptions -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -gdwarf-2 -mthumb -miphoneos-version-min=6.1 -iquote /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-generated-files.hmap -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-own-target-headers.hmap -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-all-target-headers.hmap -iquote /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-project-headers.hmap -iquote/Applications/Adobe -iquoteFlash -iquoteBuilder -iquote4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources/armv7 -I/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources -F/Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -c /Users/arno/Projects/Freshplanet/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId-Prefix.pch -o /var/folders/mn/ktwc3j2141z7vqcbs7vwbb4h0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-fabfrunpqihzdrhghemlawfrufsa/AirDeviceId-Prefix.pch.gch36"DFB6EE08-DCD9-4C45-B6CD-469A886110C8-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile AirDeviceId/AirDeviceId-Prefix.pchb9c4bdd6268fb741^c6a40bd7268fb741^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId-Prefix.pch0000000000000000^3087"ProcessPCH /var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-dhwkosmvgmjxpjbtwcxtccokeude/AirDeviceId-Prefix.pch.gch AirDeviceId/AirDeviceId-Prefix.pch normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/libexec/git-core:/Users/arno/Library/android-sdk-macosx/platform-tools:/Applications/EclipseAndroid/android-sdk-macosx/platform-tools:."    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fno-objc-exceptions -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -gdwarf-2 -mthumb -miphoneos-version-min=6.1 -iquote /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-generated-files.hmap -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-own-target-headers.hmap -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-all-target-headers.hmap -iquote /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/AirDeviceId-project-headers.hmap -iquote/Applications/Adobe -iquoteFlash -iquoteBuilder -iquote4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources/armv7 -I/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/AirDeviceId.build/Release-iphoneos/AirDeviceId.build/DerivedSources -F/Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/build/Release-iphoneos -c /Users/adamschlesinger/repos/ANE-DeviceId/NativeIOS/AirDeviceId/AirDeviceId/AirDeviceId-Prefix.pch -o /var/folders/3k/2wm03dk50gs73zm7ql38cgwh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/AirDeviceId-Prefix-dhwkosmvgmjxpjbtwcxtccokeude/AirDeviceId-Prefix.pch.gch36"11DB5C80-3E3A-4825-980B-BFCFBF3B790B-
 
