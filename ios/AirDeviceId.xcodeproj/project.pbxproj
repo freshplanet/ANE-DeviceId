@@ -84,7 +84,6 @@
 		11FC085D16FA36E9005846C3 = {
 			isa = PBXGroup;
 			children = (
-				11FC089316FA370D005846C3 /* AdSupport.framework */,
 				11FC088716FA36E9005846C3 /* AirDeviceId */,
 				11FC086816FA36E9005846C3 /* Frameworks */,
 				11FC086716FA36E9005846C3 /* Products */,
@@ -102,6 +101,7 @@
 		11FC086816FA36E9005846C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11FC089316FA370D005846C3 /* AdSupport.framework */,
 				11FC086916FA36E9005846C3 /* Foundation.framework */,
 				11FC086B16FA36E9005846C3 /* CoreFoundation.framework */,
 				11FC086D16FA36E9005846C3 /* UIKit.framework */,
