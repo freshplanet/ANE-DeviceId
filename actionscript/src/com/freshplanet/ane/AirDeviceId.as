@@ -87,7 +87,7 @@ package com.freshplanet.ane
 		/**
 		 * 
 		 * @param salt	a developer specific salt
-		 * @return		unique id for this device
+		 * @return		unique id for this device or "simulator" when isOnDevice == false
 		 */
 		public function getID( salt:String ) : String {
 			
