@@ -112,7 +112,12 @@ package com.freshplanet.ane
 			}
 			
 			if ( !this._idfv ) {
+				
 				this._idfv = extCtx.call( 'getIDFV' ) as String;
+				
+				if ( this._idfv == '00000000-0000-0000-0000-000000000000' ) {
+					this._idfv = null;
+				}
 			}
 			
 			return this._idfv;
@@ -128,7 +133,12 @@ package com.freshplanet.ane
 			}
 			
 			if ( !this._idfa ) {
+				
 				this._idfa = extCtx.call( 'getIDFA' ) as String;
+				
+				if ( this._idfa == '00000000-0000-0000-0000-000000000000' ) {
+					this._idfa = null;
+				}
 			}
 			
 			return this._idfa;
