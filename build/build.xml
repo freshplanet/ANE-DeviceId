@@ -38,8 +38,21 @@
             <classpath>
                 <pathelement location="${android.sdk}/android.jar"/>
                 <pathelement location="${flex.sdk}/lib/android/FlashRuntimeExtensions.jar"/>
+                <pathelement location="${gplayservices.libs}/libs/google-play-services.jar"/>
             </classpath>
         </javac>
+
+        <mkdir dir="../android/temp/zip"/>
+        <unzip src="${gplayservices.libs}/libs/google-play-services.jar" dest="../android/temp/zip" />
+        <copydir src="../android/temp/zip/com" dest="../android/temp/classes/com"/>
+
+        <copy todir="../temp/android/res/">
+            <fileset dir="${gplayservices.libs}/bin/res"/>
+        </copy>
+        
+        <copy todir="../temp/android/res/values/">
+            <fileset dir="${gplayservices.libs}/res/values"/>
+        </copy>
 
         <mkdir dir="../temp/android/"/>
         <jar basedir="../android/temp/classes" destfile="../temp/android/lib${name}.jar"/>
