@@ -265,6 +265,7 @@
 				DSTROOT = /tmp/AirDeviceId.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirDeviceId/AirDeviceId-Prefix.pch";
+				GCC_VERSION = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -277,6 +278,7 @@
 				DSTROOT = /tmp/AirDeviceId.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirDeviceId/AirDeviceId-Prefix.pch";
+				GCC_VERSION = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
