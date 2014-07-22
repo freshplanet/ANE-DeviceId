@@ -89,8 +89,8 @@
             <arg value="${name}.ane"/>
             <arg value="../build/extension.xml"/>
             <arg line="-swc swc/${name}.swc"/>
-            <arg line="-platform iPhone-ARM -platformoptions ../build/platform.xml -C ios/ ."/>
-            <arg line="-platform Android-ARM -C android/ ."/>
+            <arg line="-platform iPhone-ARM -platformoptions ../build/platformIOS.xml -C ios/ ."/>
+            <arg line="-platform Android-ARM -platformoptions ../build/platformANDROID.xml -C android/ ."/>
             <arg line="-platform default -C default/ ."/>
         </exec>
 
