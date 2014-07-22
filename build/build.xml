@@ -42,25 +42,13 @@
             </classpath>
         </javac>
 
-        <!-- compile GPS -->
-        <mkdir dir="../android/temp/zip"/>
-        <unzip src="${gplayservices.libs}/libs/google-play-services.jar" dest="../android/temp/zip" />
-        <copydir src="../android/temp/zip/com" dest="../android/temp/classes/com"/>
-
-        <!-- <copy todir="../temp/android/res/">
-            <fileset dir="${gplayservices.libs}/bin/res/crunch"/>
-        </copy>
-        
-        <copy todir="../temp/android/res/values/">
-            <fileset dir="${gplayservices.libs}/res/values"/>
-        </copy> -->
-
-        <!-- <exec executable="rm" dir="../temp/android/">
-            <arg line="-fR $(find . -type d -name crunch|xargs) "/>
-        </exec> -->
-        <!-- END compile GPS -->
-
         <mkdir dir="../temp/android/"/>
+        
+        <copy file="${gplayservices.libs}/libs/google-play-services.jar" tofile="../temp/android/google-play-services.jar"/>
+        <copy todir="../temp/android/google-play-services-res">
+            <fileset dir="${gplayservices.libs}/res"/>
+        </copy>
+
         <jar basedir="../android/temp/classes" destfile="../temp/android/lib${name}.jar"/>
         <delete dir="../android/temp"/>
     </target>
