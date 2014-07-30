@@ -16,63 +16,77 @@
 //  
 //////////////////////////////////////////////////////////////////////////////////////
 
-package com.freshplanet.ane
-{
+package com.freshplanet.ane {
+	
 	import flash.events.EventDispatcher;
 	import flash.events.StatusEvent;
 	import flash.external.ExtensionContext;
 	import flash.system.Capabilities;
 
-	public class AirDeviceId extends EventDispatcher
-	{
-		private static var _instance:AirDeviceId;
+	public class AirDeviceId extends EventDispatcher {
 		
-		private var extCtx:ExtensionContext = null;
+		private static var _instance : AirDeviceId = null;
+		
+		private var _extCtx : ExtensionContext = null;
 		private var _id 	: String = null;
 		private var _idfv	: String = null;
 		private var _idfa	: String = null;
 		
-		public function AirDeviceId()
-		{
-			if (!_instance)
-			{
-				extCtx = ExtensionContext.createExtensionContext("com.freshplanet.ane.AirDeviceId", null);
-				if (extCtx != null)
-				{
-					extCtx.addEventListener(StatusEvent.STATUS, onStatus);
+		/**
+		 * AirDeviceId constructor
+		 */		
+		public function AirDeviceId() {
+			
+			if ( !_instance ) {
+				
+				_extCtx = ExtensionContext.createExtensionContext( 'com.freshplanet.ane.AirDeviceId', null );
+				
+				if  (_extCtx != null ) {
+					_extCtx.addEventListener( StatusEvent.STATUS, onStatus );
 				} 
-				else
-				{
+				else {
 					trace('[AirDeviceId] Error - Extension Context is null.');
 				}
+				
 				_instance = this;
 			}
-			else
-			{
-				throw Error('This is a singleton, use getInstance(), do not call the constructor directly.');
+			else {
+				throw Error( 'This is a singleton, use getInstance(), do not call the constructor directly.' );
 			}
 		}
 		
-		public static function getInstance() : AirDeviceId
-		{
+		/**
+		 * singleton getter
+		 * @return 
+		 */		
+		public static function getInstance() : AirDeviceId {
 			return _instance ? _instance : new AirDeviceId();
 		}
 		
-		public function get isOnDevice():Boolean
-		{
-			var value:Boolean = this.isOnIOS || this.isOnAndroid;
+		/**
+		 * @return test for determining if this is being run on a device
+		 */		
+		public function get isOnDevice() : Boolean {
+		
+			var value : Boolean = this.isOnIOS || this.isOnAndroid;
 			return value;
 		}
 		
-		public function get isOnIOS():Boolean
-		{
-			var value:Boolean = Capabilities.manufacturer.indexOf('iOS') > -1;
+		/**
+		 * @return 
+		 */		
+		public function get isOnIOS() : Boolean {
+			
+			var value : Boolean = Capabilities.manufacturer.indexOf( 'iOS' ) > -1;
 			return value;
 		}
 		
-		public function get isOnAndroid():Boolean
-		{
-			var value:Boolean = Capabilities.manufacturer.indexOf('Android') > -1;
+		/**
+		 * @return 
+		 */		
+		public function get isOnAndroid() : Boolean {
+			
+			var value : Boolean = Capabilities.manufacturer.indexOf( 'Android' ) > -1;
 			return value;
 		}
 		
@@ -81,7 +95,7 @@ package com.freshplanet.ane
 		 * Define your own API and use extCtx.call() to communicate with the native part of the ANE.
 		 */
 		public function isSupported() : Boolean {
-			return extCtx.call( 'isSupported' );
+			return _extCtx.call( 'isSupported' );
 		}
 		
 		/**
@@ -92,11 +106,11 @@ package com.freshplanet.ane
 		public function getID( salt:String ) : String {
 			
 			if ( !this.isOnDevice ) {
-				return "simulator";
+				return 'simulator';
 			}
 			
 			if ( !this._id ) {
-				this._id = this.extCtx.call( 'getID', salt ) as String;
+				this._id = this._extCtx.call( 'getID', salt ) as String;
 			}
 			
 			return this._id;
@@ -113,7 +127,7 @@ package com.freshplanet.ane
 			
 			if ( !this._idfv ) {
 				
-				this._idfv = extCtx.call( 'getIDFV' ) as String;
+				this._idfv = _extCtx.call( 'getIDFV' ) as String;
 				
 				if ( this._idfv == '00000000-0000-0000-0000-000000000000' ) {
 					this._idfv = null;
@@ -134,7 +148,7 @@ package com.freshplanet.ane
 			
 			if ( !this._idfa ) {
 				
-				this._idfa = extCtx.call( 'getIDFA' ) as String;
+				this._idfa = _extCtx.call( 'getIDFA' ) as String;
 				
 				if ( this._idfa == '00000000-0000-0000-0000-000000000000' ) {
 					this._idfa = null;
@@ -148,11 +162,10 @@ package com.freshplanet.ane
 		 * Status events allow the native part of the ANE to communicate with the ActionScript part.
 		 * We use event.code to represent the type of event, and event.level to carry the data.
 		 */
-		private function onStatus( event : StatusEvent ) : void
-		{
-			if (event.code == "LOGGING")
-			{
-				trace('[AirDeviceId] ' + event.level);
+		private function onStatus( event:StatusEvent ) : void {
+			
+			if ( event.code == 'LOGGING' ) {
+				trace( '[AirDeviceId] ' + event.level );
 			}
 		}
 	}
