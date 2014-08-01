@@ -184,7 +184,7 @@ package com.freshplanet.ane {
 			}
 			else if ( event.code == 'IDFA_VALUE' ) {
 				
-				_idfa = null;
+				_idfa = event.level;
 
 				var callbacks : Vector.<Function> = _idfaCallbacks.slice();
 				_idfaCallbacks.length = 0;
