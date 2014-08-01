@@ -103,8 +103,8 @@ package com.freshplanet.ane {
 		/**
 		 * 
 		 * @param 	salt		a developer specific salt
-		 * @param	callback	
-		 * @return				unique id for this device
+		 * @param	callback	method which accepts a param for a unique id for this device </br>
+		 * 						function( id:String ) : void	
 		 */
 		public function getID( salt:String, callback:Function ) : void {
 			
@@ -122,8 +122,8 @@ package com.freshplanet.ane {
 		}
 		
 		/**
-		 * @param	callback	d
-		 * @return 				vendor id or null on unavailable/Android
+		 * @param	callback	method which accepts a param for a vendor id or null on unavailable/Android </br>
+		 * 						function( idfv:String ) : void
 		 */
 		public function getIDFV( callback:Function ) : void {
 			
@@ -144,8 +144,8 @@ package com.freshplanet.ane {
 		}
 		
 		/**
-		 * @param	callback	d
-		 * @return 				advertiser id
+		 * @param	callback	method which accepts a param for an advertiser id </br>
+		 * 						function( idfa:String ) : void	
 		 */
 		public function getIDFA( callback:Function ) : void {
 			
@@ -154,7 +154,7 @@ package com.freshplanet.ane {
 				callback( null );
 				return;
 			}
-			
+
 			if ( _idfa ) {
 				callback( _idfa == '00000000-0000-0000-0000-000000000000' ? null : _idfa );
 			}
