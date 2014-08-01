@@ -32,6 +32,8 @@ package com.freshplanet.ane {
 		private var _idfv	: String = null;
 		private var _idfa	: String = null;
 		
+		private var _idfaCallbacks : Vector.<Function> = new Vector.<Function>();
+		
 		/**
 		 * AirDeviceId constructor
 		 */		
@@ -100,62 +102,75 @@ package com.freshplanet.ane {
 		
 		/**
 		 * 
-		 * @param salt	a developer specific salt
-		 * @return		unique id for this device
+		 * @param 	salt		a developer specific salt
+		 * @param	callback	
+		 * @return				unique id for this device
 		 */
-		public function getID( salt:String ) : String {
+		public function getID( salt:String, callback:Function ) : void {
 			
 			if ( !this.isOnDevice ) {
-				return 'simulator';
+				
+				callback( 'simulator' );
+				return;
 			}
 			
-			if ( !this._id ) {
-				this._id = this._extCtx.call( 'getID', salt ) as String;
+			if ( !_id ) {
+				_id = _extCtx.call( 'getID', salt ) as String;
 			}
 			
-			return this._id;
+			callback( _id );
 		}
 		
 		/**
-		 * @return vendor id or null on unavailable/Android
+		 * @param	callback	d
+		 * @return 				vendor id or null on unavailable/Android
 		 */
-		public function getIDFV() : String {
+		public function getIDFV( callback:Function ) : void {
 			
 			if ( !this.isOnDevice ) {
-				return null;
+			
+				callback( null );
+				return;
 			}
 			
-			if ( !this._idfv ) {
-				
-				this._idfv = _extCtx.call( 'getIDFV' ) as String;
-				
-				if ( this._idfv == '00000000-0000-0000-0000-000000000000' ) {
-					this._idfv = null;
-				}
+			if ( !_idfv ) {
+				_idfv = _extCtx.call( 'getIDFV' ) as String;
+			}
+			else {
+				_extCtx.call( 'getIDFV' );
 			}
 			
-			return this._idfv;
+			callback( _idfv == '00000000-0000-0000-0000-000000000000' ? null : _idfv );
 		}
 		
 		/**
-		 * @return advertiser id or null on unavailable/Android
+		 * @param	callback	d
+		 * @return 				advertiser id
 		 */
-		public function getIDFA() : String {
+		public function getIDFA( callback:Function ) : void {
 			
 			if ( !this.isOnDevice ) {
-				return null;
+				
+				callback( null );
+				return;
 			}
 			
-			if ( !this._idfa ) {
+			if ( _idfa ) {
+				callback( _idfa == '00000000-0000-0000-0000-000000000000' ? null : _idfa );
+			}
+			else if ( isOnIOS ) {
 				
-				this._idfa = _extCtx.call( 'getIDFA' ) as String;
+				_idfa = _extCtx.call( 'getIDFA' ) as String;
+				callback( _idfa == '00000000-0000-0000-0000-000000000000' ? null : _idfa );
+			}
+			else {
 				
-				if ( this._idfa == '00000000-0000-0000-0000-000000000000' ) {
-					this._idfa = null;
+				if ( _idfaCallbacks.length == 0 ) {
+					_extCtx.call( 'getIDFA' );
 				}
+				
+				_idfaCallbacks.push( callback );
 			}
-			
-			return this._idfa;
 		}
 		
 		/**
@@ -166,6 +181,17 @@ package com.freshplanet.ane {
 			
 			if ( event.code == 'LOGGING' ) {
 				trace( '[AirDeviceId] ' + event.level );
+			}
+			else if ( event.code == 'IDFA_VALUE' ) {
+				
+				_idfa = null;
+
+				var callbacks : Vector.<Function> = _idfaCallbacks.slice();
+				_idfaCallbacks.length = 0;
+				
+				for each ( var callback:Function in callbacks ) {
+					callback( _idfa == '00000000-0000-0000-0000-000000000000' ? null : _idfa );
+				}
 			}
 		}
 	}
