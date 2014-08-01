@@ -44,7 +44,7 @@ package com.freshplanet.ane {
 				_extCtx = ExtensionContext.createExtensionContext( 'com.freshplanet.ane.AirDeviceId', null );
 				
 				if  (_extCtx != null ) {
-					_extCtx.addEventListener( StatusEvent.STATUS, onStatus );
+					_extCtx.addEventListener( StatusEvent.STATUS, _onStatus );
 				} 
 				else {
 					trace('[AirDeviceId] Error - Extension Context is null.');
@@ -177,7 +177,7 @@ package com.freshplanet.ane {
 		 * Status events allow the native part of the ANE to communicate with the ActionScript part.
 		 * We use event.code to represent the type of event, and event.level to carry the data.
 		 */
-		private function onStatus( event:StatusEvent ) : void {
+		private function _onStatus( event:StatusEvent ) : void {
 			
 			if ( event.code == 'LOGGING' ) {
 				trace( '[AirDeviceId] ' + event.level );
