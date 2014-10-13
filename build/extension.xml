@@ -16,7 +16,7 @@
 //  
 //////////////////////////////////////////////////////////////////////////////////////-->
 
-<extension xmlns="http://ns.adobe.com/air/extension/3.1">
+<extension xmlns="http://ns.adobe.com/air/extension/14.0">
   <id>com.freshplanet.ane.AirDeviceId</id>
   <versionNumber>1</versionNumber>
   <platforms>

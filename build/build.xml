@@ -37,11 +37,18 @@
         <javac srcdir="../android/src" destdir="../android/temp/classes" includeantruntime="false">
             <classpath>
                 <pathelement location="${android.sdk}/android.jar"/>
-                <pathelement location="${flex.sdk}/lib/android/FlashRuntimeExtensions.jar"/>
+                <pathelement location="${air.sdk}/lib/android/FlashRuntimeExtensions.jar"/>
+                <pathelement location="../android/libs/google-play-services.jar"/>
             </classpath>
         </javac>
 
         <mkdir dir="../temp/android/"/>
+        
+        <copy file="../android/libs/google-play-services.jar" tofile="../temp/android/google-play-services.jar"/>
+        <copy todir="../temp/android/google-play-services-res">
+            <fileset dir="../android/libs/google-play-services-res"/>
+        </copy>
+
         <jar basedir="../android/temp/classes" destfile="../temp/android/lib${name}.jar"/>
         <delete dir="../android/temp"/>
     </target>
@@ -58,11 +65,11 @@
             <regexpmapper from=".*src.(.*)\.as" to="\1"/>
         </pathconvert>
 
-        <exec executable="${flex.sdk}/bin/compc${bin.ext}" failonerror="true">
+        <exec executable="${air.sdk}/bin/compc${bin.ext}" failonerror="true">
             <arg line='-source-path ../actionscript/src'/>
             <arg line='-output ../temp/swc/${name}.swc'/>
-            <arg line='-swf-version=14'/>
-            <arg line='-external-library-path+="${flex.sdk}/frameworks/libs/air/airglobal.swc"'/>
+            <arg line='-swf-version=20'/>
+            <arg line='-external-library-path+="${air.sdk}/frameworks/libs/air/airglobal.swc"'/>
             <arg line='-include-classes ${classlist}'/>
         </exec>
 
@@ -75,15 +82,15 @@
 
     <!-- Package -->
     <target name="package" description="Create the extension package">
-        <exec executable="${flex.sdk}/bin/adt${bin.ext}" failonerror="true" dir="../temp">
+        <exec executable="${air.sdk}/bin/adt${bin.ext}" failonerror="true" dir="../temp">
             <arg value="-package"/>
             <arg value="-target"/>
             <arg value="ane"/>
             <arg value="${name}.ane"/>
             <arg value="../build/extension.xml"/>
             <arg line="-swc swc/${name}.swc"/>
-            <arg line="-platform iPhone-ARM -platformoptions ../build/platform.xml -C ios/ ."/>
-            <arg line="-platform Android-ARM -C android/ ."/>
+            <arg line="-platform iPhone-ARM -platformoptions ../build/platformIOS.xml -C ios/ ."/>
+            <arg line="-platform Android-ARM -platformoptions ../build/platformANDROID.xml -C android/ ."/>
             <arg line="-platform default -C default/ ."/>
         </exec>
 
