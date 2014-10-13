@@ -71,6 +71,7 @@
             <arg line='-swf-version=20'/>
             <arg line='-external-library-path+="${air.sdk}/frameworks/libs/air/airglobal.swc"'/>
             <arg line='-include-classes ${classlist}'/>
+            <env key="AIR_SDK_HOME" value="${air.sdk}"/>
         </exec>
 
         <unzip src="../temp/swc/${name}.swc" dest="../temp/swc/content" overwrite="true"/>
@@ -91,6 +92,7 @@
             <arg line="-swc swc/${name}.swc"/>
             <arg line="-platform iPhone-ARM -platformoptions ../build/platformIOS.xml -C ios/ ."/>
             <arg line="-platform Android-ARM -platformoptions ../build/platformANDROID.xml -C android/ ."/>
+            <arg line="-platform Android-x86 -platformoptions ../build/platformANDROID.xml -C android/ ."/>
             <arg line="-platform default -C default/ ."/>
         </exec>
 
