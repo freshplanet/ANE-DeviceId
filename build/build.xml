@@ -44,11 +44,11 @@
 
         <mkdir dir="../temp/android/"/>
         
-        <copy file="../android/libs/google-play-services.jar" tofile="../temp/android/google-play-services.jar"/>
+<!--         <copy file="../android/libs/google-play-services.jar" tofile="../temp/android/google-play-services.jar"/>
         <copy todir="../temp/android/google-play-services-res">
             <fileset dir="../android/libs/google-play-services-res"/>
         </copy>
-
+ -->
         <jar basedir="../android/temp/classes" destfile="../temp/android/lib${name}.jar"/>
         <delete dir="../android/temp"/>
     </target>

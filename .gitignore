@@ -1,6 +1,7 @@
 # General
 temp
 build.config
+*~
 
 # Flash Builder
 actionscript/bin
@@ -23,6 +24,7 @@ project.properties
 
 # Xcode
 xcuserdata
+xcshareddata
 
 # OS X
 Icon

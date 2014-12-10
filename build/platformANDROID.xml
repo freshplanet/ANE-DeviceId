@@ -1,5 +1,5 @@
 <platform xmlns="http://ns.adobe.com/air/extension/14.0">
-    <packagedDependencies> 
+<!--     <packagedDependencies> 
     	<packagedDependency>google-play-services.jar</packagedDependency> 
 	</packagedDependencies> 
 	<packagedResources> 
@@ -8,4 +8,4 @@
         	<folderName>google-play-services-res</folderName> 
     	</packagedResource> 
 	</packagedResources>
-</platform>
+ --></platform>
