@@ -262,6 +262,7 @@
 		11FC089116FA36E9005846C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/AirDeviceId.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirDeviceId/AirDeviceId-Prefix.pch";
@@ -275,6 +276,7 @@
 		11FC089216FA36E9005846C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/AirDeviceId.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirDeviceId/AirDeviceId-Prefix.pch";
