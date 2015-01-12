@@ -13,6 +13,10 @@ Should you need to edit the extension source code and/or recompile it, you will 
     #edit the build.properties file to provide your machine-specific paths
     ant
 
+    
+Notes:
+* included binary has been compiled for 64-bit iOS support
+
 Reference
 ------
 
