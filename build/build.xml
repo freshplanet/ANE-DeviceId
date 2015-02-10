@@ -86,7 +86,7 @@
         <exec executable="${air.sdk}/bin/compc${bin.ext}" failonerror="true">
             <arg line='-source-path ../actionscript/src'/>
             <arg line='-output temp/swc/${name}.swc'/>
-            <arg line='-swf-version=27'/>
+            <arg line='-swf-version=25'/>
             <arg line='-external-library-path+="${air.sdk}/frameworks/libs/air/airglobal.swc"'/>
             <arg line='-include-classes ${classlist}'/>
             <env key="AIR_SDK_HOME" value="${air.sdk}"/>
