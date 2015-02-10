@@ -42,7 +42,7 @@
         <mkdir dir="temp/android/build/"/>
 
         <!-- compile the java code -->
-        <javac destdir="temp/android/build/" includeantruntime="false">
+        <javac destdir="temp/android/build/" source="1.6" includeantruntime="false">
             <src path="../android/src/"/>
             <classpath>
                 <pathelement location="${android.sdk}/android.jar"/>
