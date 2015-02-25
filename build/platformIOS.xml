@@ -1,7 +1,0 @@
-<platform xmlns="http://ns.adobe.com/air/extension/14.0">
-    <sdkVersion>6.1</sdkVersion>
-    <linkerOptions>
-        <!-- to use the AdSupport framework -->
-        <option>-framework AdSupport</option>
-    </linkerOptions>
-</platform>
