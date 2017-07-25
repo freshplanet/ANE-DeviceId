@@ -10,13 +10,13 @@ Complete usage example is in the *sample* directory.
 
 On android make sure to add this to your android manifest additions inside the application descriptor:
 
-    ```xml
+    
     <application android:enabled="true">
         ...
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
         ...
      </application>
-    ```
+    
 
 Build script
 ---------
