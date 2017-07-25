@@ -13,17 +13,21 @@
  * limitations under the License.
  */
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import "FPANEUtils.h"
+package com.freshplanet.ane.AirDeviceId;
 
-@interface AirDeviceId : NSObject {
-    FREContext _context;
+import com.adobe.fre.FREContext;
+import com.adobe.fre.FREExtension;
+
+public class AirDeviceIdExtension implements FREExtension {
+	public static AirDeviceIdExtensionContext context;
+
+	public FREContext createContext(String extId) {
+		return context = new AirDeviceIdExtensionContext();
+	}
+
+	public void dispose() {
+		context = null;
+	}
+	
+	public void initialize() {}
 }
-
-@end
-
-void AirDeviceIdContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToTest, const FRENamedFunction** functionsToSet);
-void AirDeviceIdContextFinalizer(FREContext ctx);
-void AirDeviceIdInitializer(void** extDataToSet, FREContextInitializer* ctxInitializerToSet, FREContextFinalizer* ctxFinalizerToSet);
-void AirDeviceIdFinalizer(void *extData);

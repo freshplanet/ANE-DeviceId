@@ -13,17 +13,21 @@
  * limitations under the License.
  */
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import "FPANEUtils.h"
+package com.freshplanet.ane.AirDeviceId.events {
+import flash.events.Event;
 
-@interface AirDeviceId : NSObject {
-    FREContext _context;
+public class AirDeviceIdEvent extends Event {
+
+	public static const RECEIVED_IDFA:String = "AirDeviceIdEvent_receivedIDFA";
+	private var _idfa:String;
+
+	public function AirDeviceIdEvent(type:String, idfa:String, bubbles:Boolean = false, cancelable:Boolean = false) {
+		super(type, bubbles, cancelable);
+		_idfa = idfa;
+	}
+
+	public function get idfa():String {
+		return _idfa;
+	}
 }
-
-@end
-
-void AirDeviceIdContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToTest, const FRENamedFunction** functionsToSet);
-void AirDeviceIdContextFinalizer(FREContext ctx);
-void AirDeviceIdInitializer(void** extDataToSet, FREContextInitializer* ctxInitializerToSet, FREContextFinalizer* ctxFinalizerToSet);
-void AirDeviceIdFinalizer(void *extData);
+}

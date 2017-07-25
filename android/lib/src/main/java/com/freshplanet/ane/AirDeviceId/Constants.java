@@ -12,18 +12,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.freshplanet.ane.AirDeviceId;
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import "FPANEUtils.h"
+public class Constants {
 
-@interface AirDeviceId : NSObject {
-    FREContext _context;
+    public static final String AirDeviceIdEvent_receivedIDFA = "AirDeviceIdEvent_receivedIDFA";
+
+
 }
-
-@end
-
-void AirDeviceIdContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToTest, const FRENamedFunction** functionsToSet);
-void AirDeviceIdContextFinalizer(FREContext ctx);
-void AirDeviceIdInitializer(void** extDataToSet, FREContextInitializer* ctxInitializerToSet, FREContextFinalizer* ctxFinalizerToSet);
-void AirDeviceIdFinalizer(void *extData);
