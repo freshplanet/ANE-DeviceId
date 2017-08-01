@@ -28,3 +28,8 @@ xcuserdata
 Icon
 Thumbs.db
 .DS_Store
+ios/build/
+
+android/\.gradle/
+
+android/lib/build/

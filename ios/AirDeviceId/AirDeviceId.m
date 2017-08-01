@@ -1,332 +1,135 @@
-//////////////////////////////////////////////////////////////////////////////////////
-//
-//  Copyright 2012 Freshplanet (http://freshplanet.com | opensource@freshplanet.com)
-//  
-//  Licensed under the Apache License, Version 2.0 (the "License");
-//  you may not use this file except in compliance with the License.
-//  You may obtain a copy of the License at
-//  
-//    http://www.apache.org/licenses/LICENSE-2.0
-//  
-//  Unless required by applicable law or agreed to in writing, software
-//  distributed under the License is distributed on an "AS IS" BASIS,
-//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-//  See the License for the specific language governing permissions and
-//  limitations under the License.
-//  
-//////////////////////////////////////////////////////////////////////////////////////
+/*
+ * Copyright 2017 FreshPlanet
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 #import "AirDeviceId.h"
-#import <UIKit/UIKit.h>
-#import <AdSupport/AdSupport.h>
 #import "MacAddressUID.h"
+#import <AdSupport/AdSupport.h>
+#import "Constants.h"
 
-FREContext AirDeviceIdCtx = nil;
-
+@interface AirDeviceId ()
+@property (nonatomic, readonly) FREContext context;
+@end
 
 @implementation AirDeviceId
 
-#pragma mark - Singleton
-
-static AirDeviceId *sharedInstance = nil;
-
-+ (AirDeviceId *)sharedInstance
-{
-    if (sharedInstance == nil)
-    {
-        sharedInstance = [[super allocWithZone:NULL] init];
+- (instancetype)initWithContext:(FREContext)extensionContext {
+    
+    if ((self = [super init])) {
+        
+        _context = extensionContext;
     }
-
-    return sharedInstance;
-}
-
-+ (id)allocWithZone:(NSZone *)zone
-{
-    return [self sharedInstance];
-}
-
-- (id)copy
-{
+    
     return self;
 }
 
-@end
-
-
-#pragma mark - C interface
-
-/* This is a TEST function that is being included as part of this template. 
- *
- * Users of this template are expected to change this and add similar functions 
- * to be able to call the native functions in the ANE from their ActionScript code
- */
-DEFINE_ANE_FUNCTION(IsSupported)
-{
-    NSLog(@"Entering IsSupported()");
-
-    FREObject fo;
-
-    FREResult aResult = FRENewObjectFromBool(YES, &fo);
-    if (aResult == FRE_OK)
-    {
-        //things are fine
-        NSLog(@"Result = %d", aResult);
-    }
-    else
-    {
-        //aResult could be FRE_INVALID_ARGUMENT or FRE_WRONG_THREAD, take appropriate action.
-        NSLog(@"Result = %d", aResult);
-    }
-    
-    NSLog(@"Exiting IsSupported()");
-    
-    return fo;
+- (void) sendLog:(NSString*)log {
+    [self sendEvent:@"log" level:log];
 }
 
-//DEFINE_ANE_FUNCTION(getDeviceId)
-//{
-//    NSLog(@"Entering getDeviceId()");
-//    FREObject fo;
-//    
-//    // get the id
-//    NSString * idString;
-//    
-//    if([[UIDevice currentDevice] respondsToSelector:@selector(identifierForVendor)])
-//    {
-//        NSLog(@"identifierForVendor supported");
-//        idString = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-//    }
-//    // Forbidden by Apple starting 2013-05-01
-//    //else if([[UIDevice currentDevice] respondsToSelector:@selector(uniqueIdentifier)])
-//    //{
-//    //    NSLog(@"identifierForVendor not supported, using uniqueIdentifier");
-//    //    idString = [[UIDevice currentDevice] uniqueIdentifier];
-//    //}
-//    else
-//    {
-//        // get the salt
-//        uint32_t stringArgLength;
-//        const uint8_t *stringArg;
-//        
-//        NSString *salt;
-//        if (FREGetObjectAsUTF8(argv[0], &stringArgLength, &stringArg) != FRE_OK)
-//        {
-//            salt = @"";
-//        }
-//        else
-//        {
-//            salt = [NSString stringWithUTF8String:(char*)stringArg];
-//        }
-//        
-//        // get the mac address id
-//        idString = [MacAddressUID uniqueIdentifierForSalt:salt];
-//    }
-//    
-//    // set the id in the response
-//    NSLog(@"id returned: %@", idString);
-//    FRENewObjectFromUTF8(strlen([idString UTF8String]), (const uint8_t *)[idString UTF8String], &fo);
-//    NSLog(@"Exiting getDeviceId()");
-//    return fo;
-//}
-//
-//DEFINE_ANE_FUNCTION(getAdvertisingId)
-//{
-//    NSLog(@"Entering getAdvertisingId()");
-//    FREObject fo;
-//    
-//    // get the id
-//    NSString * idString;
-//    
-//    if([[ASIdentifierManager sharedManager] respondsToSelector:@selector(advertisingIdentifier)])
-//    {
-//        NSLog(@"advertisingIdentifier supported");
-//        idString = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-//    }
-//    // Forbidden by Apple starting 2013-05-01
-//    //else if([[UIDevice currentDevice] respondsToSelector:@selector(uniqueIdentifier)])
-//    //{
-//    //    NSLog(@"advertisingIdentifier not supported, using uniqueIdentifier");
-//    //    idString = [[UIDevice currentDevice] uniqueIdentifier];
-//    //}
-//    else
-//    {
-//        // get the salt
-//        uint32_t stringArgLength;
-//        const uint8_t *stringArg;
-//        
-//        NSString *salt;
-//        if (FREGetObjectAsUTF8(argv[0], &stringArgLength, &stringArg) != FRE_OK)
-//        {
-//            salt = @"";
-//        }
-//        else
-//        {
-//            salt = [NSString stringWithUTF8String:(char*)stringArg];
-//        }
-//        
-//        // get the mac address id
-//        idString = [MacAddressUID uniqueIdentifierForSalt:salt];
-//    }
-//    
-//    NSLog(@"id returned: %@", idString);
-//    FRENewObjectFromUTF8(strlen([idString UTF8String]), (const uint8_t *)[idString UTF8String], &fo);
-//    NSLog(@"Exiting getAdvertisingId()");
-//    return fo;
-//}
+- (void) sendEvent:(NSString*)code {
+    [self sendEvent:code level:@""];
+}
+
+- (void) sendEvent:(NSString*)code level:(NSString*)level {
+    FREDispatchStatusEventAsync(_context, (const uint8_t*)[code UTF8String], (const uint8_t*)[level UTF8String]);
+}
+@end
+
+AirDeviceId* GetAirDeviceIdContextNativeData(FREContext context) {
+    
+    CFTypeRef controller;
+    FREGetContextNativeData(context, (void**)&controller);
+    return (__bridge AirDeviceId*)controller;
+}
 
 DEFINE_ANE_FUNCTION(getID) {
     
-    NSLog(@"Entering getID()");
-    FREObject fo = NULL;
     
-    uint32_t stringArgLength;
-    const uint8_t *stringArg;
+    AirDeviceId* controller = GetAirDeviceIdContextNativeData(context);
     
-    NSString *salt;
-    if (FREGetObjectAsUTF8(argv[0], &stringArgLength, &stringArg) != FRE_OK) {
-        salt = @"";
+    if (!controller)
+        return FPANE_CreateError(@"context's AirDeviceId is null", 0);
+    
+    @try {
+        
+        NSString *salt = FPANE_FREObjectToNSString(argv[0]);
+        NSString *idString = [MacAddressUID uniqueIdentifierForSalt:salt];
+        
+        return FPANE_NSStringToFREObject(idString);
     }
-    else {
-        salt = [NSString stringWithUTF8String:(char*)stringArg];
+    @catch (NSException *exception) {
+        [controller sendLog:[@"Exception occured while trying to getID : " stringByAppendingString:exception.reason]];
     }
-    
-    // get the mac address id
-    NSString* idString = [MacAddressUID uniqueIdentifierForSalt:salt];
 
-    NSLog(@"id returned: %@", idString);
-    FRENewObjectFromUTF8(strlen([idString UTF8String]), (const uint8_t *)[idString UTF8String], &fo);
-    
-    NSLog(@"Exiting getID()");
-    return fo;
+    return nil;
 }
 
 DEFINE_ANE_FUNCTION(getIDFV) {
     
-    NSLog(@"Entering getIDFV()");
-    FREObject fo = NULL;
-    
-    // get the id
     if ([[UIDevice currentDevice] respondsToSelector:@selector(identifierForVendor)]) {
-       
-        NSLog(@"identifierForVendor supported");
         NSString* idString = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-        
-        NSLog(@"id returned: %@", idString);
-        FRENewObjectFromUTF8(strlen([idString UTF8String]), (const uint8_t *)[idString UTF8String], &fo);
+        return FPANE_NSStringToFREObject(idString);
     }
     
-    NSLog(@"Exiting getIDFV()");
-    return fo;
+    return nil;
 }
 
 DEFINE_ANE_FUNCTION(getIDFA) {
+  
+    AirDeviceId* controller = GetAirDeviceIdContextNativeData(context);
     
-    NSLog(@"Entering getIDFA()");
-    FREObject fo = NULL;
+    if (!controller)
+        return FPANE_CreateError(@"context's AirDeviceId is null", 0);
     
-    // get the id
     if ([[ASIdentifierManager sharedManager] respondsToSelector:@selector(advertisingIdentifier)]) {
-        
-        NSLog(@"advertisingIdentifier supported");
         NSString* idString = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-    
-        NSLog(@"id returned: %@", idString);
-        FRENewObjectFromUTF8(strlen([idString UTF8String]), (const uint8_t *)[idString UTF8String], &fo);
+        [controller sendEvent:kAirDeviceIdEvent_receivedIDFA level:idString];
     }
     
-    NSLog(@"Exiting getIDFA()");
-    return fo;
+    return nil;
 }
 
 #pragma mark - ANE setup
 
-/* AirDeviceIdExtInitializer()
- * The extension initializer is called the first time the ActionScript side of the extension
- * calls ExtensionContext.createExtensionContext() for any context.
- *
- * Please note: this should be same as the <initializer> specified in the extension.xml 
- */
-void AirDeviceIdExtInitializer(void** extDataToSet, FREContextInitializer* ctxInitializerToSet, FREContextFinalizer* ctxFinalizerToSet) 
-{
-    NSLog(@"Entering AirDeviceIdExtInitializer()");
+void AirDeviceIdContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx,
+                                uint32_t* numFunctionsToTest, const FRENamedFunction** functionsToSet) {
+    
+    AirDeviceId* controller = [[AirDeviceId alloc] initWithContext:ctx];
+    FRESetContextNativeData(ctx, (void*)CFBridgingRetain(controller));
+    
+    static FRENamedFunction functions[] = {
+        MAP_FUNCTION(getID, NULL),
+        MAP_FUNCTION(getIDFV, NULL),
+        MAP_FUNCTION(getIDFA, NULL)
+    };
+    
+    *numFunctionsToTest = sizeof(functions) / sizeof(FRENamedFunction);
+    *functionsToSet = functions;
+    
+}
 
+void AirDeviceIdContextFinalizer(FREContext ctx) {
+    CFTypeRef controller;
+    FREGetContextNativeData(ctx, (void **)&controller);
+    CFBridgingRelease(controller);
+}
+
+void AirDeviceIdInitializer(void** extDataToSet, FREContextInitializer* ctxInitializerToSet, FREContextFinalizer* ctxFinalizerToSet ) {
     *extDataToSet = NULL;
     *ctxInitializerToSet = &AirDeviceIdContextInitializer;
     *ctxFinalizerToSet = &AirDeviceIdContextFinalizer;
-
-    NSLog(@"Exiting AirDeviceIdExtInitializer()");
 }
 
-/* AirDeviceIdExtFinalizer()
- * The extension finalizer is called when the runtime unloads the extension. However, it may not always called.
- *
- * Please note: this should be same as the <finalizer> specified in the extension.xml 
- */
-void AirDeviceIdExtFinalizer(void* extData) 
-{
-    NSLog(@"Entering AirDeviceIdExtFinalizer()");
-
-    // Nothing to clean up.
-    NSLog(@"Exiting AirDeviceIdExtFinalizer()");
-    return;
-}
-
-/* ContextInitializer()
- * The context initializer is called when the runtime creates the extension context instance.
- */
-void AirDeviceIdContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToTest, const FRENamedFunction** functionsToSet)
-{
-    NSLog(@"Entering ContextInitializer()");
-
-    /* The following code describes the functions that are exposed by this native extension to the ActionScript code.
-     * As a sample, the function isSupported is being provided.
-     */
-    *numFunctionsToTest = 4;
-
-    FRENamedFunction* func = (FRENamedFunction*) malloc(sizeof(FRENamedFunction) * (*numFunctionsToTest));
-    func[0].name = (const uint8_t*) "isSupported";
-    func[0].functionData = NULL;
-    func[0].function = &IsSupported;
-    
-//    func[1].name = (const uint8_t*) "getDeviceId";
-//    func[1].functionData = NULL;
-//    func[1].function = &getDeviceId;
-//    
-//    func[2].name = (const uint8_t*) "getAdvertisingId";
-//    func[2].functionData = NULL;
-//    func[2].function = &getAdvertisingId;
-    
-    func[1].name = (const uint8_t*) "getID";
-    func[1].functionData = NULL;
-    func[1].function = &getID;
-    
-    func[2].name = (const uint8_t*) "getIDFV";
-    func[2].functionData = NULL;
-    func[2].function = &getIDFV;
-    
-    func[3].name = (const uint8_t*) "getIDFA";
-    func[3].functionData = NULL;
-    func[3].function = &getIDFA;
-
-    *functionsToSet = func;
-
-    AirDeviceIdCtx = ctx;
-
-    NSLog(@"Exiting ContextInitializer()");
-}
-
-/* ContextFinalizer()
- * The context finalizer is called when the extension's ActionScript code
- * calls the ExtensionContext instance's dispose() method.
- * If the AIR runtime garbage collector disposes of the ExtensionContext instance, the runtime also calls ContextFinalizer().
- */
-void AirDeviceIdContextFinalizer(FREContext ctx) 
-{
-    NSLog(@"Entering ContextFinalizer()");
-
-    // Nothing to clean up.
-    NSLog(@"Exiting ContextFinalizer()");
-    return;
-}
-
-
+void AirDeviceIdFinalizer(void *extData) {}

@@ -13,17 +13,10 @@
  * limitations under the License.
  */
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import "FPANEUtils.h"
+#ifndef Constants_h
+#define Constants_h
 
-@interface AirDeviceId : NSObject {
-    FREContext _context;
-}
 
-@end
+#endif /* Constants_h */
 
-void AirDeviceIdContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToTest, const FRENamedFunction** functionsToSet);
-void AirDeviceIdContextFinalizer(FREContext ctx);
-void AirDeviceIdInitializer(void** extDataToSet, FREContextInitializer* ctxInitializerToSet, FREContextFinalizer* ctxFinalizerToSet);
-void AirDeviceIdFinalizer(void *extData);
+static NSString *const kAirDeviceIdEvent_receivedIDFA = @"AirDeviceIdEvent_receivedIDFA";

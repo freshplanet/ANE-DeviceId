@@ -1,11 +1,25 @@
-<platform xmlns="http://ns.adobe.com/air/extension/15.0">
+<platform xmlns="http://ns.adobe.com/air/extension/22.0">
     <packagedDependencies> 
-    	<!-- <packagedDependency>google-play-services.jar</packagedDependency>  -->
-	</packagedDependencies> 
-	<packagedResources> 
-    	<!-- <packagedResource> 
-       		<packageName>com.google.android.gms</packageName> 
-        	<folderName>google-play-services-res</folderName> 
-    	</packagedResource>  -->
+    	 <!--<packagedDependency>play-services-ads-lite-9.4.0.jar</packagedDependency>
+    	 <packagedDependency>play-services-basement-9.4.0.jar</packagedDependency>
+
+    	 <packagedDependency>support-compat-25.0.0.jar</packagedDependency>
+    	 <packagedDependency>support-core-ui-25.0.0.jar</packagedDependency>
+    	 <packagedDependency>support-core-utils-25.0.0.jar</packagedDependency>
+    	 <packagedDependency>support-fragment-25.0.0.jar</packagedDependency>
+    	 <packagedDependency>support-media-compat-25.0.0.jar</packagedDependency>
+    	 <packagedDependency>support-v4-25.0.0.jar</packagedDependency>
+
+    	 <packagedDependency>support-compat-25.0.0-internal.jar</packagedDependency>
+    	 <packagedDependency>support-core-ui-25.0.0-internal.jar</packagedDependency>
+    	 <packagedDependency>support-core-utils-25.0.0-internal.jar</packagedDependency>
+    	 <packagedDependency>support-fragment-25.0.0-internal.jar</packagedDependency>
+    	 <packagedDependency>support-media-compat-25.0.0-internal.jar</packagedDependency>-->
+	</packagedDependencies>
+	<packagedResources>
+		<!--<packagedResource>
+			<packageName>com.google.android.gms</packageName>
+			<folderName>AirDeviceId-res</folderName>
+		</packagedResource>-->
 	</packagedResources>
 </platform>
