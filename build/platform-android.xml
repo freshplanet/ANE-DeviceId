@@ -1,24 +1,25 @@
-<platform xmlns="http://ns.adobe.com/air/extension/20.0">
+<platform xmlns="http://ns.adobe.com/air/extension/22.0">
     <packagedDependencies> 
-    	 <packagedDependency>play-services-ads-11.0.2.jar</packagedDependency>
-    	 <packagedDependency>play-services-ads-lite-11.0.2.jar</packagedDependency>
-    	 <packagedDependency>play-services-clearcut-11.0.2.jar</packagedDependency>
-    	 <packagedDependency>play-services-gass-11.0.2.jar</packagedDependency>
-    	 <packagedDependency>play-services-tasks-11.0.2.jar</packagedDependency>
-    	 <packagedDependency>play-services-base-11.0.2.jar</packagedDependency>
-    	 <packagedDependency>play-services-basement-11.0.2.jar</packagedDependency>
-    	 <packagedDependency>play-services-safetynet-11.0.2.jar</packagedDependency>
-    	 <packagedDependency>support-compat-25.2.0.jar</packagedDependency>
-    	 <packagedDependency>support-core-ui-25.2.0.jar</packagedDependency>
-    	 <packagedDependency>support-core-utils-25.2.0.jar</packagedDependency>
-    	 <packagedDependency>support-fragment-25.2.0.jar</packagedDependency>
-    	 <packagedDependency>support-media-compat-25.2.0.jar</packagedDependency>
-    	 <packagedDependency>support-v4-25.2.0.jar</packagedDependency>
+    	 <!--<packagedDependency>play-services-ads-lite-9.4.0.jar</packagedDependency>
+    	 <packagedDependency>play-services-basement-9.4.0.jar</packagedDependency>
+
+    	 <packagedDependency>support-compat-25.0.0.jar</packagedDependency>
+    	 <packagedDependency>support-core-ui-25.0.0.jar</packagedDependency>
+    	 <packagedDependency>support-core-utils-25.0.0.jar</packagedDependency>
+    	 <packagedDependency>support-fragment-25.0.0.jar</packagedDependency>
+    	 <packagedDependency>support-media-compat-25.0.0.jar</packagedDependency>
+    	 <packagedDependency>support-v4-25.0.0.jar</packagedDependency>
+
+    	 <packagedDependency>support-compat-25.0.0-internal.jar</packagedDependency>
+    	 <packagedDependency>support-core-ui-25.0.0-internal.jar</packagedDependency>
+    	 <packagedDependency>support-core-utils-25.0.0-internal.jar</packagedDependency>
+    	 <packagedDependency>support-fragment-25.0.0-internal.jar</packagedDependency>
+    	 <packagedDependency>support-media-compat-25.0.0-internal.jar</packagedDependency>-->
 	</packagedDependencies>
 	<packagedResources>
-		<packagedResource>
+		<!--<packagedResource>
 			<packageName>com.google.android.gms</packageName>
 			<folderName>AirDeviceId-res</folderName>
-		</packagedResource>
+		</packagedResource>-->
 	</packagedResources>
 </platform>

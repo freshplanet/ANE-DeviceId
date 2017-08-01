@@ -37,13 +37,9 @@
         </exec>
 
         <!-- copy the libs and resources to the base temp ios directory -->
-        <copy todir="temp/ios" overwrite="true" includeEmptyDirs="false" flatten="true">
-            <fileset dir="../ios/">
-                <include name="build/Release-iphoneos/**/*"/>
+        <copy todir="temp/ios" overwrite="true" includeEmptyDirs="false" flatten="false">
+            <fileset dir="../ios/build/Release-iphoneos/">
                 <exclude name="**/*Pods-${name}*"/>
-                <exclude name="**/*.bundle/"/>
-                <exclude name="**/*.nib/"/>
-                <exclude name="**/*.h"/>
             </fileset>
         </copy>
 
@@ -51,8 +47,6 @@
         <for param="path">
             <path>
                 <dirset dir="../ios/">
-                    <include name="build/Release-iphoneos/**/*.bundle"/>
-                    <include name="build/Release-iphoneos/**/*.nib"/>
                     <include name="**/*.framework"/>
                 </dirset>
             </path>
@@ -86,6 +80,7 @@
         <!-- clean the build -->
         <exec executable="./gradlew" dir="../android">
             <env key="JAVA_HOME" path="${java.home}"/>
+            <env key="ANDROID_HOME" path="${android.sdk.home}"/>
             <arg line="clean"/>
         </exec>
 
@@ -100,9 +95,14 @@
         <copy file="${build.release}/classes.jar" tofile="temp/android/lib${name}.jar"/>
 
         <!-- Copy over required resources -->
-        <copy todir="temp/android/${name}-res">
-            <fileset dir="${build.intermediates}/res/merged/release"/>
-        </copy>
+        <if>
+            <equals arg1="${include.shared.resources}" arg2="true"/>
+            <then>
+                <copy todir="temp/android/${name}-res">
+                    <fileset dir="${build.intermediates}/res/merged/release"/>
+                </copy>
+            </then>
+        </if>
 
         <!-- Copy over the bundled libs -->
         <copy todir="temp/android">
