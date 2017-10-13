@@ -60,14 +60,14 @@ DEFINE_ANE_FUNCTION(getID) {
     AirDeviceId* controller = GetAirDeviceIdContextNativeData(context);
     
     if (!controller)
-        return FPANE_CreateError(@"context's AirDeviceId is null", 0);
+        return AirDeviceId_FPANE_CreateError(@"context's AirDeviceId is null", 0);
     
     @try {
         
-        NSString *salt = FPANE_FREObjectToNSString(argv[0]);
+        NSString *salt = AirDeviceId_FPANE_FREObjectToNSString(argv[0]);
         NSString *idString = [MacAddressUID uniqueIdentifierForSalt:salt];
         
-        return FPANE_NSStringToFREObject(idString);
+        return AirDeviceId_FPANE_NSStringToFREObject(idString);
     }
     @catch (NSException *exception) {
         [controller sendLog:[@"Exception occured while trying to getID : " stringByAppendingString:exception.reason]];
@@ -80,7 +80,7 @@ DEFINE_ANE_FUNCTION(getIDFV) {
     
     if ([[UIDevice currentDevice] respondsToSelector:@selector(identifierForVendor)]) {
         NSString* idString = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-        return FPANE_NSStringToFREObject(idString);
+        return AirDeviceId_FPANE_NSStringToFREObject(idString);
     }
     
     return nil;
@@ -91,7 +91,7 @@ DEFINE_ANE_FUNCTION(getIDFA) {
     AirDeviceId* controller = GetAirDeviceIdContextNativeData(context);
     
     if (!controller)
-        return FPANE_CreateError(@"context's AirDeviceId is null", 0);
+        return AirDeviceId_FPANE_CreateError(@"context's AirDeviceId is null", 0);
     
     if ([[ASIdentifierManager sharedManager] respondsToSelector:@selector(advertisingIdentifier)]) {
         NSString* idString = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
