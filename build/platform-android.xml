@@ -1,20 +1,19 @@
 <platform xmlns="http://ns.adobe.com/air/extension/22.0">
     <packagedDependencies> 
-    	 <!--<packagedDependency>play-services-ads-lite-9.4.0.jar</packagedDependency>
-    	 <packagedDependency>play-services-basement-9.4.0.jar</packagedDependency>
+    	 <!--<packagedDependency>play-services-ads-lite-11.8.0.jar</packagedDependency>-->
+    	 <!--<packagedDependency>play-services-basement-11.8.0.jar</packagedDependency>-->
+    	 <!--<packagedDependency>support-annotations-27.0.2.jar</packagedDependency>-->
+    	 <!--<packagedDependency>support-compat-27.0.2.jar</packagedDependency>-->
+    	 <!--<packagedDependency>support-core-ui-27.0.2.jar</packagedDependency>-->
+    	 <!--<packagedDependency>support-core-utils-27.0.2.jar</packagedDependency>-->
+    	 <!--<packagedDependency>support-fragment-27.0.2.jar</packagedDependency>-->
+    	 <!--<packagedDependency>support-media-compat-27.0.2.jar</packagedDependency>-->
+    	 <!--<packagedDependency>support-v4-27.0.2.jar</packagedDependency>-->
+		<!---->
+    	 <!--<packagedDependency>common-1.0.0.jar</packagedDependency>-->
+    	 <!--<packagedDependency>common-1.0.3.jar</packagedDependency>-->
+    	 <!--<packagedDependency>runtime-1.0.3.jar</packagedDependency>-->
 
-    	 <packagedDependency>support-compat-25.0.0.jar</packagedDependency>
-    	 <packagedDependency>support-core-ui-25.0.0.jar</packagedDependency>
-    	 <packagedDependency>support-core-utils-25.0.0.jar</packagedDependency>
-    	 <packagedDependency>support-fragment-25.0.0.jar</packagedDependency>
-    	 <packagedDependency>support-media-compat-25.0.0.jar</packagedDependency>
-    	 <packagedDependency>support-v4-25.0.0.jar</packagedDependency>
-
-    	 <packagedDependency>support-compat-25.0.0-internal.jar</packagedDependency>
-    	 <packagedDependency>support-core-ui-25.0.0-internal.jar</packagedDependency>
-    	 <packagedDependency>support-core-utils-25.0.0-internal.jar</packagedDependency>
-    	 <packagedDependency>support-fragment-25.0.0-internal.jar</packagedDependency>
-    	 <packagedDependency>support-media-compat-25.0.0-internal.jar</packagedDependency>-->
 	</packagedDependencies>
 	<packagedResources>
 		<!--<packagedResource>
