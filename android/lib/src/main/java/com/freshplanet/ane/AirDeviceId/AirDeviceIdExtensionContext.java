@@ -20,7 +20,6 @@ import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
 import com.freshplanet.ane.AirDeviceId.functions.GetIDFAFunction;
 import com.freshplanet.ane.AirDeviceId.functions.GetIDFVFunction;
-import com.freshplanet.ane.AirDeviceId.functions.GetIDFunction;
 
 import java.util.HashMap;
 import java.util.Map;

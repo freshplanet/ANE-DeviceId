@@ -15,7 +15,8 @@
 
 package com.freshplanet.ane.AirDeviceId.functions;
 
-import android.os.Build;
+import android.provider.Settings.Secure;
+
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREObject;
 import com.freshplanet.ane.AirDeviceId.AirDeviceIdExtension;
@@ -26,11 +27,13 @@ public class GetIDFVFunction extends BaseFunction {
 
 		super.call(context, args);
 
+		// Closest thing to iOS' IDFV on Android
+		String deviceId = Secure.getString(context.getActivity().getContentResolver(), Secure.ANDROID_ID);
+
 		try {
-			String deviceId = (String) Build.class.getField("SERIAL").get(null);
 			return FREObject.newObject(deviceId);
 		} catch (Exception e) {
-			AirDeviceIdExtension.context.dispatchStatusEventAsync("log", "Exception occurred while trying to getIDFV " + e.getLocalizedMessage());
+			AirDeviceIdExtension.context.dispatchStatusEventAsync("log", "Exception occurred while trying to getID " + e.getLocalizedMessage());
 		}
 
 		return null;
