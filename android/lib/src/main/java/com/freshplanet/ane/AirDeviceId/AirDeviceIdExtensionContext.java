@@ -35,7 +35,6 @@ public class AirDeviceIdExtensionContext extends FREContext {
 	public Map<String, FREFunction> getFunctions() {
 		Map<String, FREFunction> functions = new HashMap<String, FREFunction>();
 		
-		functions.put("getID", new GetIDFunction());
 		functions.put("getIDFV", new GetIDFVFunction());
 		functions.put("getIDFA", new GetIDFAFunction());
 		return functions;	
