@@ -11,7 +11,6 @@
 		A2B3C13B1F27A8E5009A918E /* AirDeviceId.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B3C13A1F27A8E5009A918E /* AirDeviceId.m */; };
 		A2B3C13C1F27A8E5009A918E /* AirDeviceId.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A2B3C1391F27A8E5009A918E /* AirDeviceId.h */; };
 		A2B3C1451F27A90D009A918E /* FPANEUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B3C1441F27A90D009A918E /* FPANEUtils.m */; };
-		A2B3C1481F27AAE5009A918E /* MacAddressUID.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B3C1471F27AAE5009A918E /* MacAddressUID.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,8 +34,6 @@
 		A2B3C1421F27A90D009A918E /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
 		A2B3C1431F27A90D009A918E /* FPANEUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPANEUtils.h; sourceTree = "<group>"; };
 		A2B3C1441F27A90D009A918E /* FPANEUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPANEUtils.m; sourceTree = "<group>"; };
-		A2B3C1461F27AAE5009A918E /* MacAddressUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacAddressUID.h; sourceTree = "<group>"; };
-		A2B3C1471F27AAE5009A918E /* MacAddressUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacAddressUID.m; sourceTree = "<group>"; };
 		A2B3C1491F27D41C009A918E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		D988BA732AC67333291266AF /* libPods-AirDeviceId.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AirDeviceId.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00B32FFC08FC56B18B2D92C /* Pods-AirDeviceId.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirDeviceId.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirDeviceId/Pods-AirDeviceId.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,8 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				A2B3C1491F27D41C009A918E /* Constants.h */,
-				A2B3C1461F27AAE5009A918E /* MacAddressUID.h */,
-				A2B3C1471F27AAE5009A918E /* MacAddressUID.m */,
 				A2B3C1391F27A8E5009A918E /* AirDeviceId.h */,
 				A2B3C13A1F27A8E5009A918E /* AirDeviceId.m */,
 			);
@@ -147,6 +142,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = A2B3C12D1F27A8E4009A918E;
@@ -198,7 +194,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2B3C1451F27A90D009A918E /* FPANEUtils.m in Sources */,
-				A2B3C1481F27AAE5009A918E /* MacAddressUID.m in Sources */,
 				A2B3C13B1F27A8E5009A918E /* AirDeviceId.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

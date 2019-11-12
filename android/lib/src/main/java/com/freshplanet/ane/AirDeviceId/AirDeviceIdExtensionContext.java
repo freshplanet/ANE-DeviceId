@@ -20,7 +20,6 @@ import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
 import com.freshplanet.ane.AirDeviceId.functions.GetIDFAFunction;
 import com.freshplanet.ane.AirDeviceId.functions.GetIDFVFunction;
-import com.freshplanet.ane.AirDeviceId.functions.GetIDFunction;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -36,7 +35,6 @@ public class AirDeviceIdExtensionContext extends FREContext {
 	public Map<String, FREFunction> getFunctions() {
 		Map<String, FREFunction> functions = new HashMap<String, FREFunction>();
 		
-		functions.put("getID", new GetIDFunction());
 		functions.put("getIDFV", new GetIDFVFunction());
 		functions.put("getIDFA", new GetIDFAFunction());
 		return functions;	

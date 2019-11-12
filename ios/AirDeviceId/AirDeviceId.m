@@ -14,7 +14,6 @@
  */
 
 #import "AirDeviceId.h"
-#import "MacAddressUID.h"
 #import <AdSupport/AdSupport.h>
 #import "Constants.h"
 
@@ -54,28 +53,6 @@ AirDeviceId* GetAirDeviceIdContextNativeData(FREContext context) {
     return (__bridge AirDeviceId*)controller;
 }
 
-DEFINE_ANE_FUNCTION(getID) {
-    
-    
-    AirDeviceId* controller = GetAirDeviceIdContextNativeData(context);
-    
-    if (!controller)
-        return AirDeviceId_FPANE_CreateError(@"context's AirDeviceId is null", 0);
-    
-    @try {
-        
-        NSString *salt = AirDeviceId_FPANE_FREObjectToNSString(argv[0]);
-        NSString *idString = [MacAddressUID uniqueIdentifierForSalt:salt];
-        
-        return AirDeviceId_FPANE_NSStringToFREObject(idString);
-    }
-    @catch (NSException *exception) {
-        [controller sendLog:[@"Exception occured while trying to getID : " stringByAppendingString:exception.reason]];
-    }
-
-    return nil;
-}
-
 DEFINE_ANE_FUNCTION(getIDFV) {
     
     if ([[UIDevice currentDevice] respondsToSelector:@selector(identifierForVendor)]) {
@@ -110,7 +87,6 @@ void AirDeviceIdContextInitializer(void* extData, const uint8_t* ctxType, FRECon
     FRESetContextNativeData(ctx, (void*)CFBridgingRetain(controller));
     
     static FRENamedFunction functions[] = {
-        MAP_FUNCTION(getID, NULL),
         MAP_FUNCTION(getIDFV, NULL),
         MAP_FUNCTION(getIDFA, NULL)
     };
