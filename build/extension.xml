@@ -31,6 +31,20 @@
             <finalizer>com.freshplanet.ane.AirDeviceId.AirDeviceIdExtension</finalizer>
         </applicationDeployment>
     </platform>
+    <platform name="Android-ARM64">
+        <applicationDeployment>
+            <nativeLibrary>libAirDeviceId.jar</nativeLibrary>
+            <initializer>com.freshplanet.ane.AirDeviceId.AirDeviceIdExtension</initializer>
+            <finalizer>com.freshplanet.ane.AirDeviceId.AirDeviceIdExtension</finalizer>
+        </applicationDeployment>
+    </platform>
+    <platform name="Android-x86">
+        <applicationDeployment>
+            <nativeLibrary>libAirDeviceId.jar</nativeLibrary>
+            <initializer>com.freshplanet.ane.AirDeviceId.AirDeviceIdExtension</initializer>
+            <finalizer>com.freshplanet.ane.AirDeviceId.AirDeviceIdExtension</finalizer>
+        </applicationDeployment>
+    </platform>
     <platform name="default"> 
         <applicationDeployment/> 
     </platform> 
