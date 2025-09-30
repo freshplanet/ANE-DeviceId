@@ -1,5 +1,5 @@
 <platform xmlns="http://ns.adobe.com/air/extension/22.0">
-    <sdkVersion>10.0</sdkVersion>
+    <sdkVersion>13.0</sdkVersion>
     <linkerOptions>
         <option>-framework AdSupport</option>
     </linkerOptions>
