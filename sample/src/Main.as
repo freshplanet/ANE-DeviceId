@@ -53,15 +53,11 @@ public class Main extends Sprite {
         }
 
         AirDeviceId.instance.addEventListener(AirDeviceIdEvent.RECEIVED_IDFA, onReceivedIDFA);
+        AirDeviceId.instance.addEventListener(AirDeviceIdEvent.RECEIVED_IDFV, onReceivedIDFV);
         var blocks:Array = [];
 
-	    blocks.push(new TestBlock("getID", function():void {
-		    var id:String = AirDeviceId.instance.getID("some_salt");
-            trace("ID is ", id);
-	    }));
         blocks.push(new TestBlock("getIDFV", function():void {
-            var idfv:String = AirDeviceId.instance.getIDFV();
-            trace("IDFV is ", idfv);
+            AirDeviceId.instance.getIDFV();
         }));
         blocks.push(new TestBlock("getIDFA", function():void {
             AirDeviceId.instance.getIDFA();
@@ -85,6 +81,10 @@ public class Main extends Sprite {
 
     private function onReceivedIDFA(event:AirDeviceIdEvent):void {
         trace("Received IDFA ", event.idfa);
+    }
+
+    private function onReceivedIDFV(event:AirDeviceIdEvent):void {
+        trace("Received IDFV ", event.idfv);
     }
 
 

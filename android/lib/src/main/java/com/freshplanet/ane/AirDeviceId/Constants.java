@@ -17,6 +17,7 @@ package com.freshplanet.ane.AirDeviceId;
 public class Constants {
 
     public static final String AirDeviceIdEvent_receivedIDFA = "AirDeviceIdEvent_receivedIDFA";
+    public static final String AirDeviceIdEvent_receivedIDFV = "AirDeviceIdEvent_receivedIDFV";
 
 
 }

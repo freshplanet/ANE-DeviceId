@@ -19,15 +19,20 @@ import flash.events.Event;
 public class AirDeviceIdEvent extends Event {
 
 	public static const RECEIVED_IDFA:String = "AirDeviceIdEvent_receivedIDFA";
-	private var _idfa:String;
+	public static const RECEIVED_IDFV:String = "AirDeviceIdEvent_receivedIDFV";
+	private var _id:String;
 
-	public function AirDeviceIdEvent(type:String, idfa:String, bubbles:Boolean = false, cancelable:Boolean = false) {
+	public function AirDeviceIdEvent(type:String, id:String, bubbles:Boolean = false, cancelable:Boolean = false) {
 		super(type, bubbles, cancelable);
-		_idfa = idfa;
+		_id = id;
 	}
 
 	public function get idfa():String {
-		return _idfa;
+		return _id;
+	}
+
+	public function get idfv():String {
+		return _id;
 	}
 }
 }
