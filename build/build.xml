@@ -67,7 +67,7 @@
 
         <!-- paths -->
         <property name="build.intermediates" value="../android/lib/build/intermediates"/>
-        <property name="build.release" value="${build.intermediates}/packaged-classes/release"/>
+        <property name="build.release" value="${build.intermediates}/aar_main_jar/release/syncReleaseLibJars"/>
 
         <!-- make the build directory -->
         <mkdir dir="temp/android"/>
@@ -104,27 +104,27 @@
         </if>
 
         <!-- Copy dependencies into temp folder -->
-        <exec executable="./gradlew" dir="../android">
+        <!-- <exec executable="./gradlew" dir="../android">
             <env key="JAVA_HOME" path="${java.home}"/>
             <env key="ANDROID_HOME" path="${android.sdk.home}"/>
             <arg line="copyDependencies"/>
-        </exec>
+        </exec> -->
 
         <!-- Extract aar files -->
-        <foreach target="unzipAAR" param="aarFile">
+        <!-- <foreach target="unzipAAR" param="aarFile">
             <fileset dir="../android/lib/dependencies">
                 <include name="*.aar"/>
             </fileset>
-        </foreach>
+        </foreach> -->
 
         <!-- Copy to build folder -->
-        <copy todir="temp/android">
+        <!-- <copy todir="temp/android">
             <fileset dir="../android/lib/dependencies" excludes="FlashRuntimeExtensions.jar, runtimeClasses.jar">
                 <include name="*.jar"/>
             </fileset>
         </copy>
 
-        <delete dir="../android/lib/dependencies"/>
+        <delete dir="../android/lib/dependencies"/> -->
 
     </target>
 
