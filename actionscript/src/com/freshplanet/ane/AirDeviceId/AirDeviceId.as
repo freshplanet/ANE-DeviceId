@@ -47,12 +47,10 @@ import flash.events.EventDispatcher;
 		 * Get vendor identifier
 		 * @return
 		 */
-		public function getIDFV():String {
+		public function getIDFV():void {
 
 			if (isSupported)
-				return _context.call( 'getIDFV' ) as String;
-
-			return null;
+				_context.call( 'getIDFV' );
 		}
 
 		/**
@@ -105,8 +103,8 @@ import flash.events.EventDispatcher;
 		 */
 		private function _onStatus( event:StatusEvent ) : void {
 
-			if ( event.code == AirDeviceIdEvent.RECEIVED_IDFA ) {
-				this.dispatchEvent(new AirDeviceIdEvent(AirDeviceIdEvent.RECEIVED_IDFA, event.level));
+			if ( event.code == AirDeviceIdEvent.RECEIVED_IDFA || event.code == AirDeviceIdEvent.RECEIVED_IDFV) {
+				this.dispatchEvent(new AirDeviceIdEvent(event.code, event.level));
 			}
 			else if ( event.code == "log" ) {
 				trace( '[AirDeviceId] ' + event.level );

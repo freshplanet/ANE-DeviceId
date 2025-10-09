@@ -55,9 +55,14 @@ AirDeviceId* GetAirDeviceIdContextNativeData(FREContext context) {
 
 DEFINE_ANE_FUNCTION(getIDFV) {
     
+    AirDeviceId* controller = GetAirDeviceIdContextNativeData(context);
+    
+    if (!controller)
+        return AirDeviceId_FPANE_CreateError(@"context's AirDeviceId is null", 0);
+
     if ([[UIDevice currentDevice] respondsToSelector:@selector(identifierForVendor)]) {
         NSString* idString = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-        return AirDeviceId_FPANE_NSStringToFREObject(idString);
+        [controller sendEvent:kAirDeviceIdEvent_receivedIDFV level:idString];
     }
     
     return nil;

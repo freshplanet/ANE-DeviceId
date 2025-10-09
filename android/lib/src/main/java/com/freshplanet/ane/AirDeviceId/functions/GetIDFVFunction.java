@@ -15,11 +15,22 @@
 
 package com.freshplanet.ane.AirDeviceId.functions;
 
+import android.app.Activity;
+import android.content.Context;
+
 import android.provider.Settings.Secure;
 
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREObject;
 import com.freshplanet.ane.AirDeviceId.AirDeviceIdExtension;
+
+import com.freshplanet.ane.AirDeviceId.Constants;
+import com.google.android.gms.appset.AppSet;
+import com.google.android.gms.appset.AppSetIdClient;
+import com.google.android.gms.appset.AppSetIdInfo;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 
 public class GetIDFVFunction extends BaseFunction {
 
@@ -28,15 +39,41 @@ public class GetIDFVFunction extends BaseFunction {
 		super.call(context, args);
 
 		// Closest thing to iOS' IDFV on Android
-		String deviceId = Secure.getString(context.getActivity().getContentResolver(), Secure.ANDROID_ID);
+		Context applicationContext = context.getActivity().getApplicationContext();
+		AppSetIdClient client = AppSet.getClient(applicationContext);
+		Task<AppSetIdInfo> task = client.getAppSetIdInfo();
 
-		try {
-			return FREObject.newObject(deviceId);
-		} catch (Exception e) {
-			AirDeviceIdExtension.context.dispatchStatusEventAsync("log", "Exception occurred while trying to getID " + e.getLocalizedMessage());
-		}
+		task.addOnSuccessListener(new OnSuccessListener<AppSetIdInfo>() {
+			@Override
+			public void onSuccess(AppSetIdInfo info) {
+				finished(context.getActivity(), info);
+			}
+		});
+
+		task.addOnFailureListener(new OnFailureListener() {
+			@Override
+			public void onFailure(Exception e) {
+				AirDeviceIdExtension.context.dispatchStatusEventAsync("log", "Exception occurred while trying to getIDFV " + e.getLocalizedMessage() );
+			}
+		});
 
 		return null;
+
+	}
+
+	private void finished(final Activity activity, final AppSetIdInfo info){
+		if (info != null) {
+			activity.runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					String idfv = info.getId();
+					AirDeviceIdExtension.context.dispatchStatusEventAsync(Constants.AirDeviceIdEvent_receivedIDFV, idfv );
+				}
+			});
+		}
+		else {
+			AirDeviceIdExtension.context.dispatchStatusEventAsync(Constants.AirDeviceIdEvent_receivedIDFV, "" );
+		}
 
 	}
 }

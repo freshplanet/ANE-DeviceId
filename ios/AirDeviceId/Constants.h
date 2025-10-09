@@ -20,3 +20,4 @@
 #endif /* Constants_h */
 
 static NSString *const kAirDeviceIdEvent_receivedIDFA = @"AirDeviceIdEvent_receivedIDFA";
+static NSString *const kAirDeviceIdEvent_receivedIDFV = @"AirDeviceIdEvent_receivedIDFV";
