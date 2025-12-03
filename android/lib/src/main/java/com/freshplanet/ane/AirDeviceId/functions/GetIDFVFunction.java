@@ -62,7 +62,7 @@ public class GetIDFVFunction extends BaseFunction {
 	}
 
 	private void finished(final Activity activity, final AppSetIdInfo info){
-		if (info != null) {
+		if (info != null && activity != null) {
 			activity.runOnUiThread(new Runnable() {
 				@Override
 				public void run() {
